@@ -39,7 +39,30 @@ namespace LaunchDarkly.Logging
     /// SDKs, aims to make the task of writing and maintaining logging adapters very straightforward, and
     /// to reduce the chance that a change in third-party APIs will cause backward incompatibillity.
     /// </para>
+    /// <para>    
+    /// The example code below shows how to configure the LaunchDarkly server-side SDK for .NET to use some
+    /// of the standard logging implementations. For more examples of how to specify a logging implementation
+    /// when using the LaunchDarkly SDKs or other libraries, consult the documentation for those libraries.
+    /// Each library may have its own rules for what the default logging implementation is if you don't
+    /// specify one.
+    /// </para>
     /// </remarks>
+    /// <example>
+    ///     // In this configuration, logging goes to the standard output stream (Console.Out).
+    ///     var config1 = Configuration.Builder("my-sdk-key")
+    ///         .Logging(Components.Logging(Logs.ToStream(Console.Out)))
+    ///         .Build();
+    ///
+    ///     // Same, but all logging below Warn level is suppressed.
+    ///     var config2 = Configuration.Builder("my-sdk-key")
+    ///         .Logging(Components.Logging(Logs.ToStream(Console.Out).Level(LogLevel.Warn)))
+    ///         .Build();
+    ///
+    ///     // This configuration disables all logging.
+    ///     var config3 = Configuration.Builder("my-sdk-key")
+    ///         .Logging(Components.Logging(Logs.None))
+    ///         .Build();
+    /// </example>
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     class NamespaceDoc
     {

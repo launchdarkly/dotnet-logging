@@ -9,6 +9,26 @@ The reason for this indirect approach to logging is that LaunchDarkly tools can 
 
 Earlier versions of LaunchDarkly SDKs used the [`Common.Logging`](https://github.com/net-commons/common-logging) framework, which provides adapters to various popular loggers. But writing the LaunchDarkly packages against such a third-party API causes inconvenience for any developer using LaunchDarkly who prefers a different framework, and it is a relatively heavyweight solution for projects that may only have simple logging requirements. This package, with its small feature set geared toward the needs of LaunchDarkly SDKs, aims to make the task of writing and maintaining logging adapters very straightforward, and to reduce the chance that a change in third-party APIs will cause backward incompatibillity.
 
+Here are simple examples of configuring the LaunchDarkly server-side SDK for .NET to use some of the standard logging implementations. For more examples of how to specify a logging implementation when using the LaunchDarkly SDKs or other libraries, consult the documentation for those libraries. Each library may have its own rules for what the default logging implementation is if you don't specify one.
+
+```csharp
+    // In this configuration, logging goes to the standard output stream (Console.Out).
+    var config1 = Configuration.Builder("my-sdk-key")
+        .Logging(Components.Logging(Logs.ToStream(Console.Out)))
+        .Build();
+
+    // Same, but all logging below Warn level is suppressed.
+    var config2 = Configuration.Builder("my-sdk-key")
+        .Logging(Components.Logging(Logs.ToStream(Console.Out).Level(LogLevel.Warn)))
+        .Build();
+
+    // This configuration disables all logging.
+    var config3 = Configuration.Builder("my-sdk-key")
+        .Logging(Components.Logging(Logs.None))
+        .Build();
+```
+
+
 ## Contributing
 
 See [Contributing](https://github.com/launchdarkly/dotnet-logging/blob/master/CONTRIBUTING.md).
