@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+    <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/launchdarkly/dotnet-logging/master/LICENSE</PackageLicenseUrl>
+    <DebugType>portable</DebugType>
+    <AssemblyName>LaunchDarkly.Logging</AssemblyName>
+    <OutputType>Library</OutputType>
+    <PackageId>LaunchDarkly.CommonSdk</PackageId>
+    <Description>LaunchDarkly logging abstraction</Description>
+    <Copyright>Copyright 2020 LaunchDarkly</Copyright>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\LaunchDarkly.Logging.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <AssemblyOriginatorKeyFile>../../LaunchDarkly.Logging.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+
+  <ItemGroup> <!-- see https://github.com/dotnet/sourcelink -->
+    <PackageReference Include="Microsoft.SourceLink.GitLab" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

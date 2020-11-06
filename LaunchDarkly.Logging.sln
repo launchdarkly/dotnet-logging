@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchDarkly.Logging", "src\LaunchDarkly.Logging\LaunchDarkly.Logging.csproj", "{12188987-A2D1-475F-B2EE-A0DF7E49A5A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaunchDarkly.Logging.Tests", "test\LaunchDarkly.Logging.Tests\LaunchDarkly.Logging.Tests.csproj", "{8FDD115A-DFE7-43D8-8A73-B453E342030E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12188987-A2D1-475F-B2EE-A0DF7E49A5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12188987-A2D1-475F-B2EE-A0DF7E49A5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12188987-A2D1-475F-B2EE-A0DF7E49A5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12188987-A2D1-475F-B2EE-A0DF7E49A5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FDD115A-DFE7-43D8-8A73-B453E342030E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FDD115A-DFE7-43D8-8A73-B453E342030E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FDD115A-DFE7-43D8-8A73-B453E342030E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FDD115A-DFE7-43D8-8A73-B453E342030E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
