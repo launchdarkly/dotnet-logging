@@ -11,6 +11,7 @@ template:
   name: dotnet-windows
   env:
     LD_RELEASE_TEST_TARGET_FRAMEWORK: net46
+    LD_RELEASE_DOCS_TARGET_FRAMEWORK: netcoreapp2.0 # so the docs will include Logs.CoreLogging
 
 documentation:
   title: LaunchDarkly Logging Abstraction

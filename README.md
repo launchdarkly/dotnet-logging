@@ -22,8 +22,13 @@ Here are simple examples of configuring the LaunchDarkly server-side SDK for .NE
         .Logging(Components.Logging(Logs.ToStream(Console.Out).Level(LogLevel.Warn)))
         .Build();
 
-    // This configuration disables all logging.
+    // This configuration delegates to the .NET Core logging framework, assuming that
+    // "loggerFactory" is a Microsoft.Extensions.Logging.ILoggerFactory.
     var config3 = Configuration.Builder("my-sdk-key")
+    	.Logging(Components.Logging(Logs.CoreLogging(loggerFactory)));
+
+    // This configuration disables all logging.
+    var config4 = Configuration.Builder("my-sdk-key")
         .Logging(Components.Logging(Logs.None))
         .Build();
 ```
