@@ -13,10 +13,8 @@ namespace LaunchDarkly.Logging
             _factory = factory;
         }
 
-        public IChannel NewChannel(string name)
-        {
-            return new ChannelImpl(_factory.CreateLogger(name));
-        }
+        public IChannel NewChannel(string name) =>
+            new ChannelImpl(_factory.CreateLogger(name));
    
         private class ChannelImpl : IChannel
         {
@@ -44,10 +42,7 @@ namespace LaunchDarkly.Logging
                 }
             }
 
-            public bool IsEnabled(LogLevel level)
-            {
-                return _logger.IsEnabled(Level(level));
-            }
+            public bool IsEnabled(LogLevel level) => _logger.IsEnabled(Level(level));
 
             public void Log(LogLevel level, object message)
             {
