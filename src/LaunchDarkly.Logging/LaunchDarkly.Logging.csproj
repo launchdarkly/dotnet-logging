@@ -6,7 +6,7 @@
     <DebugType>portable</DebugType>
     <AssemblyName>LaunchDarkly.Logging</AssemblyName>
     <OutputType>Library</OutputType>
-    <PackageId>LaunchDarkly.CommonSdk</PackageId>
+    <PackageId>LaunchDarkly.Logging</PackageId>
     <Description>LaunchDarkly logging abstraction</Description>
     <Copyright>Copyright 2020 LaunchDarkly</Copyright>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
