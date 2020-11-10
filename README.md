@@ -1,7 +1,7 @@
 # LaunchDarkly Logging
 
 [![CircleCI](https://circleci.com/gh/launchdarkly/dotnet-logging/tree/master.svg?style=svg)](https://circleci.com/gh/launchdarkly/dotnet-logging/tree/master)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flaunchdarkly%2Fdotnet-logging.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flaunchdarkly%2Fdotnet-logging?ref=badge_shield)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flaunchdarkly%2Fdotnet-logging.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flaunchdarkly%2Fdotnet-logging?ref=badge_shield)[][![Documentation](https://img.shields.io/static/v1?label=GitHub+Pages&message=reference&color=00add8)](https://launchdarkly.github.io/dotnet-logging)
 
 This .NET package provides a basic logging abstraction that is used by other LaunchDarkly .NET packages, including the LaunchDarkly [.NET SDK](https://github.com/launchdarkly/dotnet-server-sdk) and [Xamarin SDK](https://github.com/launchdarkly/xamarin-client-sdk). It can be connected to other logging frameworks with a simple adapter interface.
 
@@ -44,13 +44,13 @@ The published version of this assembly is digitally signed with Authenticode, an
 
 ```
 Public Key:
-0024000004800000940000000602000000240000525341310004000001000100
-250509411af6d31f2abfc9b33d02b01c6ad14fd5c7f83cc6135f499ebb0ec8f3
-4e05c59e49232f5a7d75d5761281610219d323043936d55c19bb26f1dd86bdc7
-6ab178015e78b54aef9cbdc824db2afcf7250292ae3d8d9c4522bcc3a4fc4831
-d4b4320e820f32e024ad50a786f86d37ea45e0c25ec431a7a0f3e93575a0d2ad
+2400000080040000009400000206000024000000535231410400000000010001
+afcbfe1e33dbb0c823ca71ef053aed35a49a7f1e601d9ee27fe86b78062b1d83
+30814ed41ccaf3817ff3f699766e5debb3dd46fd75f7439fc2fe390fcee65465
+a8a17f69f1bef56e253fc9166096c907514ab74b812d041faa04712e2bcb243d
+1038eed2b0023a35a41782d70c65cb4b51d189576df0b7846e9378a5d0758a39
 
-Public Key Token: 45ef1738a929a7df
+Public Key Token: d9182e4b0afd33e7
 ```
 
 Building the code locally in the default Debug configuration does not sign the assembly and does not require a key file. Note that the unit tests can only be run in the Debug configuration.

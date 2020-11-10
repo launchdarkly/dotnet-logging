@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Version>1.0.0</Version>
+    <Version>1.0.0-alpha.1</Version>
     <TargetFrameworks>netstandard2.0;netcoreapp2.0;net452</TargetFrameworks>
     <PackageLicenseUrl>https://raw.githubusercontent.com/launchdarkly/dotnet-logging/master/LICENSE</PackageLicenseUrl>
     <DebugType>portable</DebugType>
     <AssemblyName>LaunchDarkly.Logging</AssemblyName>
     <OutputType>Library</OutputType>
-    <PackageId>LaunchDarkly.CommonSdk</PackageId>
+    <PackageId>LaunchDarkly.Logging</PackageId>
     <Description>LaunchDarkly logging abstraction</Description>
     <Copyright>Copyright 2020 LaunchDarkly</Copyright>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
