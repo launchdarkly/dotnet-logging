@@ -54,4 +54,4 @@ jobs:
           command: dotnet build src/LaunchDarkly.Logging -f net452
       - run:
           name: run tests
-          command: dotnet test test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj -f net46
+          command: dotnet test test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj -f net452
