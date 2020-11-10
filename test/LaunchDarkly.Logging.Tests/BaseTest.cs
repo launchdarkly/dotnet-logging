@@ -18,7 +18,7 @@ namespace LaunchDarkly.Logging.Tests
         public const string MessageFormat3Result = "m3:1=xxx,2=567,3=True.";
 
         public static IEnumerable<LogLevel> AllLevels() =>
-            new LogLevel[] { LogLevel.Debug, LogLevel.Info, LogLevel.Warn, LogLevel.Info };
+            new LogLevel[] { LogLevel.Debug, LogLevel.Info, LogLevel.Warn, LogLevel.Error };
 
         // generates parameter lists for parameterized tests
         public static IEnumerable<object[]> AllLevelsData() =>
