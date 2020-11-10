@@ -2,13 +2,13 @@
   <PropertyGroup>
     <Version>1.0.0-alpha.1</Version>
     <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/launchdarkly/dotnet-logging/master/LICENSE</PackageLicenseUrl>
     <DebugType>portable</DebugType>
     <AssemblyName>LaunchDarkly.Logging</AssemblyName>
     <OutputType>Library</OutputType>
     <PackageId>LaunchDarkly.Logging</PackageId>
     <Description>LaunchDarkly logging abstraction</Description>
     <Copyright>Copyright 2020 LaunchDarkly</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
