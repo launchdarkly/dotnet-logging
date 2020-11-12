@@ -74,6 +74,8 @@ jobs:
     executor:
       name: win/vs2019
       shell: powershell.exe
+    environment:
+      TESTFRAMEWORK: net452
     steps:
       - checkout
       - restore_cache:
