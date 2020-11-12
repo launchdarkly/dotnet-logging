@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Version>1.0.0-alpha.1</Version>
-    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net452</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.1;net452</TargetFrameworks>
     <DebugType>portable</DebugType>
     <AssemblyName>LaunchDarkly.Logging</AssemblyName>
     <OutputType>Library</OutputType>
@@ -14,7 +14,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.0' ">
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.1' ">
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.9" />
   </ItemGroup>
 

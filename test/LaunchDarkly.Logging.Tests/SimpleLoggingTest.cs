@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using Xunit;
 
 namespace LaunchDarkly.Logging.Tests
@@ -32,7 +33,7 @@ namespace LaunchDarkly.Logging.Tests
             {
                 return new string[0];
             }
-            return s1.Split('\n');
+            return s1.Split('\n').Select(line => line.Trim()).ToArray();
         }
     }
 }

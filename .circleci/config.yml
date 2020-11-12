@@ -4,34 +4,71 @@ workflows:
   version: 2
   test:
     jobs:
-      - test-netcore-2-1
+      - build-netstandard-netcore
+      - test-netcore:
+          name: .NET Core 2.1
+          docker-image: mcr.microsoft.com/dotnet/core/sdk:2.1-focal
+          test-target-framework: netcoreapp2.1
+          requires:
+            - build-netstandard-netcore
+      - test-netcore:
+          name: .NET Core 2.1 library running in .NET Core 3.1
+          docker-image: mcr.microsoft.com/dotnet/core/sdk:3.1-focal
+          test-target-framework: netcoreapp3.1
+          requires:
+            - build-netstandard-netcore
+      - test-netcore:
+          name: .NET Core 2.1 library running in .NET 5.0
+          docker-image: mcr.microsoft.com/dotnet/sdk:5.0-focal
+          test-target-framework: net5.0
+          requires:
+            - build-netstandard-netcore
       - test-windows-netframework-4-5-2
 
 orbs:
   win: circleci/windows@1.0.0
 
 jobs:
-  test-netcore-2-1:
+  build-netstandard-netcore:
     docker:
       - image: mcr.microsoft.com/dotnet/core/sdk:2.1-focal
+    environment:
+      ASPNETCORE_SUPPRESSSTATUSMESSAGES: true
     steps:
       - checkout
-      - restore_cache:
-          keys: 
-            - netcore21-deps-{{ checksum "src/LaunchDarkly.Logging/LaunchDarkly.Logging.csproj" }}-{{ checksum "test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj" }}
       - run:
-          name: install project dependencies
-          command: dotnet restore
-      - save_cache:
-          key: netcore21-deps-{{ checksum "src/LaunchDarkly.Logging/LaunchDarkly.Logging.csproj" }}-{{ checksum "test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj" }}
-          paths:
-            - /root/.nuget/packages
+          name: restore dependencies
+          command: dotnet restore src/LaunchDarkly.Logging
       - run:
-          name: build
+          name: build .NET Standard 2.0
           command: dotnet build src/LaunchDarkly.Logging -f netstandard2.0
       - run:
+          name: build .NET Core 2.1
+          command: dotnet build src/LaunchDarkly.Logging -f netcoreapp2.1
+      - persist_to_workspace:
+          root: src/LaunchDarkly.Logging
+          paths:
+            - bin
+            - obj
+
+  test-netcore:
+    parameters:
+      docker-image:
+        type: string
+      test-target-framework:
+        type: string
+    docker:
+      - image: <<parameters.docker-image>>
+    environment:
+      ASPNETCORE_SUPPRESSSTATUSMESSAGES: true
+      TESTFRAMEWORK: <<parameters.test-target-framework>>
+    steps:
+      - checkout
+      - attach_workspace:
+          at: src/LaunchDarkly.Logging
+      - run:
           name: run tests
-          command: dotnet test test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj -f netcoreapp2.1
+          command: dotnet test test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj -f <<parameters.test-target-framework>>
 
   test-windows-netframework-4-5-2:
     executor:
@@ -54,4 +91,4 @@ jobs:
           command: dotnet build src/LaunchDarkly.Logging -f net452
       - run:
           name: run tests
-          command: dotnet test test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj -f net46
+          command: dotnet test test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj -f net452
