@@ -1,0 +1,17 @@
+
+publications:
+  - url: https://nuget.org/packages/LaunchDarkly.Logging
+    description: NuGet
+
+circleci:
+  windows:
+    context: org-global
+
+template:
+  name: dotnet-windows
+  env:
+    LD_RELEASE_TEST_TARGET_FRAMEWORK: net46
+
+documentation:
+  title: LaunchDarkly Logging Abstraction
+  githubPages: true
