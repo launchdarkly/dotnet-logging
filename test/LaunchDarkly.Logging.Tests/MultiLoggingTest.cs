@@ -15,5 +15,19 @@ namespace LaunchDarkly.Logging.Tests
             LogCaptureTest.VerifyCapturedOutput(outputLevel, LogLevel.Debug, "", sink1);
             LogCaptureTest.VerifyCapturedOutput(outputLevel, LogLevel.Debug, "", sink2);
         }
+
+        [Fact]
+        public void LevelIsEnabledIfItIsEnabledForAnyDestinationLogger()
+        {
+            var infoLevelLogger = Logs.ToConsole.Level(LogLevel.Info);
+            var warnLevelLogger = Logs.ToConsole.Level(LogLevel.Warn);
+            var multi = Logs.ToMultiple(infoLevelLogger, warnLevelLogger).Logger("");
+            Assert.True(multi.IsEnabled(LogLevel.Warn));
+            Assert.True(multi.IsEnabled(LogLevel.Info));
+            Assert.False(multi.IsEnabled(LogLevel.Debug));
+
+            var empty = Logs.ToMultiple().Logger("");
+            Assert.False(empty.IsEnabled(LogLevel.Info));
+        }
     }
 }

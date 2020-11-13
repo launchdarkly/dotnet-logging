@@ -41,10 +41,10 @@ namespace LaunchDarkly.Logging
                 {
                     if (c.IsEnabled(level))
                     {
-                        return false;
+                        return true;
                     }
                 }
-                return true;
+                return false;
             }
 
             public void Log(LogLevel level, object message)
