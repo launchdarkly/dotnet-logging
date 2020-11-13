@@ -15,7 +15,7 @@ namespace LaunchDarkly.Logging
         /// </remarks>
         /// <param name="level"></param>
         /// <returns>DEBUG, INFO, etc.</returns>
-        public static string LevelUppercase(this LogLevel level)
+        public static string Uppercase(this LogLevel level)
         {
             switch (level)
             {
