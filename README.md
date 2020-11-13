@@ -1,4 +1,4 @@
-# LaunchDarkly Logging
+# LaunchDarkly Logging API for .NET
 
 [![CircleCI](https://circleci.com/gh/launchdarkly/dotnet-logging/tree/master.svg?style=svg)](https://circleci.com/gh/launchdarkly/dotnet-logging/tree/master)
 [![Documentation](https://img.shields.io/static/v1?label=GitHub+Pages&message=reference&color=00add8)](https://launchdarkly.github.io/dotnet-logging)
