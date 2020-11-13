@@ -7,7 +7,7 @@ namespace LaunchDarkly.Logging
     /// </summary>
     /// <remarks>
     /// <para>
-    /// Code that generates log output will send it through this clas. What happens to
+    /// Code that generates log output will send it through this class. What happens to
     /// the output depends on the <see cref="ILogAdapter"/> that was used to create the
     /// <see cref="Logger"/>.
     /// </para>
