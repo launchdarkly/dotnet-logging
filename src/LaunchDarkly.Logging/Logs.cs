@@ -1,6 +1,10 @@
 ﻿using System;
 using System.IO;
 
+#if NETCOREAPP
+using Microsoft.Extensions.Logging;
+#endif
+
 namespace LaunchDarkly.Logging
 {
     /// <summary>
@@ -38,8 +42,9 @@ namespace LaunchDarkly.Logging
         /// This is equivalent to <c>Logs.ToWriter(Console.Error)</c>.
         /// </para>
         /// <para>
-        /// By default, all logging is enabled including <c>Debug</c>. To filter by level, use
-        /// <see cref="ILogAdapterExtensions.Level(ILogAdapter, LogLevel)"/>.
+        /// By default, all logging is enabled including <c>Debug</c> level. To filter by level, use
+        /// <see cref="ILogAdapterExtensions.Level(ILogAdapter, LogLevel)"/>. You can also use
+        /// <see cref="SimpleLogging"/> methods for additional configuration.
         /// </para>
         /// </remarks>
         public static SimpleLogging ToConsole => ToWriter(Console.Error);
@@ -48,11 +53,45 @@ namespace LaunchDarkly.Logging
         /// A simple logging implementation that writes to any <c>TextWriter</c>.
         /// </summary>
         /// <remarks>
+        /// <para>
         /// This could be a built-in writer such as <c>Console.Out</c>, or a file.
+        /// </para>
+        /// <para>
+        /// By default, all logging is enabled including <c>Debug</c> level. To filter by level, use
+        /// <see cref="ILogAdapterExtensions.Level(ILogAdapter, LogLevel)"/>. You can also use
+        /// <see cref="SimpleLogging"/> methods for additional configuration.
+        /// </para>
         /// </remarks>
         /// <param name="stream">the destination for output</param>
-        /// <returns></returns>
+        /// <returns>a configurable logging adapter</returns>
         public static SimpleLogging ToWriter(TextWriter stream) => new SimpleLogging(stream);
+
+#if NETCOREAPP
+        /// <summary>
+        /// A logging implementation that delegates to the .NET Core logging framework.
+        /// </summary>
+        /// <remarks>
+        /// <para>
+        /// This method is only available when your target framework is .NET Core. It causes
+        /// the <c>LaunchDarkly.Logging</c> APIs to delegate to the <c>Microsoft.Extensions.Logging</c>
+        /// framework. The <c>ILoggingFactory</c> is the main configuration object for
+        /// <c>Microsoft.Extensions.Logging</c>; application code can construct it programmatically,
+        /// or can obtain it by dependency injection. For more information, see
+        /// <see href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-3.1">Logging
+        /// in .NET Core and ASP.NET Core</see>.
+        /// </para>
+        /// <para>
+        /// The .NET Core logging framework has its own mechanisms for filtering log output
+        /// by level or other criteria. If you add a level filter with
+        /// <see cref="ILogAdapterExtensions.Level(ILogAdapter, LogLevel)"/>, it will filter
+        /// out messages below that level before they reach the .NET Core logger.
+        /// </para>
+        /// </remarks>
+        /// <param name="loggerFactory">the factory object for .NET Core logging</param>
+        /// <returns>a logging adapter</returns>
+        public static ILogAdapter CoreLogging(ILoggerFactory loggerFactory) =>
+            new NetCoreLogging(loggerFactory);
+#endif
 
         /// <summary>
         /// A logging implementation that delegates to any number of destinations.
@@ -64,7 +103,7 @@ namespace LaunchDarkly.Logging
         ///         SimpleLog.Adapter, // writes to Console.Error
         /// </example>
         /// <param name="logAdapters"></param>
-        /// <returns></returns>
+        /// <returns>an <see cref="ILogAdapter"/></returns>
         public static ILogAdapter ToMultiple(params ILogAdapter[] logAdapters) =>
             new MultiLogging(logAdapters);
 
