@@ -21,7 +21,7 @@ namespace LaunchDarkly.Logging
         /// <summary>
         /// The default format for log timestamps.
         /// </summary>
-        public const string DefaultDateFormat = "yyyy-MM-dd HH:mm:ss.SSS zzz";
+        public const string DefaultDateFormat = "yyyy-MM-dd HH:mm:ss.fff zzz";
 
         internal SimpleLogging(Action<string> writeLine) :
             this(writeLine, DefaultDateFormat) { }
