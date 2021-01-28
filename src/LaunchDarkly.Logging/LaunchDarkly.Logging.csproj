@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Version>1.0.0-alpha.2</Version>
+    <Version>1.0.0-alpha.5</Version>
     <TargetFrameworks>netstandard2.0;netcoreapp2.1;net452</TargetFrameworks>
     <DebugType>portable</DebugType>
     <AssemblyName>LaunchDarkly.Logging</AssemblyName>
