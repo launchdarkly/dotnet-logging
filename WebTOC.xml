@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="9e38b2ca-486a-4678-9963-4d31251250db" Title="Namespaces" Url="html/R_Project_Documentation.htm">
+    <HelpTOCNode Id="bd142d03-cf90-41a9-a478-50778fabaa56" Title="LaunchDarkly.Logging" Url="html/N_LaunchDarkly_Logging.htm">
+      <HelpTOCNode Id="7c7aa92d-bb55-45af-8e0c-cb1b9a7e4309" Title="Extensions Class" Url="html/T_LaunchDarkly_Logging_Extensions.htm">
+        <HelpTOCNode Id="1cf74bc2-3a7a-4907-98c7-cf8887c5b5db" Title="Extensions Methods" Url="html/Methods_T_LaunchDarkly_Logging_Extensions.htm">
+          <HelpTOCNode Title="Uppercase Method " Url="html/M_LaunchDarkly_Logging_Extensions_Uppercase.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="ef71d218-9f9d-49b9-b7b6-daa5379ee665" Title="IChannel Interface" Url="html/T_LaunchDarkly_Logging_IChannel.htm">
+        <HelpTOCNode Id="2cdfd20c-9d4d-4cd9-a469-b8d7b8a38226" Title="IChannel Methods" Url="html/Methods_T_LaunchDarkly_Logging_IChannel.htm">
+          <HelpTOCNode Title="IsEnabled Method " Url="html/M_LaunchDarkly_Logging_IChannel_IsEnabled.htm" />
+          <HelpTOCNode Id="40e2c42a-2008-45fc-a1c4-ac59c5c135b7" Title="Log Method " Url="html/Overload_LaunchDarkly_Logging_IChannel_Log.htm">
+            <HelpTOCNode Title="Log Method (LogLevel, Object)" Url="html/M_LaunchDarkly_Logging_IChannel_Log.htm" />
+            <HelpTOCNode Title="Log Method (LogLevel, String, Object)" Url="html/M_LaunchDarkly_Logging_IChannel_Log_1.htm" />
+            <HelpTOCNode Title="Log Method (LogLevel, String, Object[])" Url="html/M_LaunchDarkly_Logging_IChannel_Log_3.htm" />
+            <HelpTOCNode Title="Log Method (LogLevel, String, Object, Object)" Url="html/M_LaunchDarkly_Logging_IChannel_Log_2.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="87ecb7cd-005b-4607-bd89-d890a43ef44c" Title="ILogAdapter Interface" Url="html/T_LaunchDarkly_Logging_ILogAdapter.htm">
+        <HelpTOCNode Id="9551a3dd-fe43-4bea-a923-db1717e57d9f" Title="ILogAdapter Methods" Url="html/Methods_T_LaunchDarkly_Logging_ILogAdapter.htm">
+          <HelpTOCNode Title="NewChannel Method " Url="html/M_LaunchDarkly_Logging_ILogAdapter_NewChannel.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="812f0283-9abb-4ab4-9a5b-46273ca49ed2" Title="ILogAdapterExtensions Class" Url="html/T_LaunchDarkly_Logging_ILogAdapterExtensions.htm">
+        <HelpTOCNode Id="be32efef-3c02-434d-b144-7758e1fb2214" Title="ILogAdapterExtensions Methods" Url="html/Methods_T_LaunchDarkly_Logging_ILogAdapterExtensions.htm">
+          <HelpTOCNode Title="Level Method " Url="html/M_LaunchDarkly_Logging_ILogAdapterExtensions_Level.htm" />
+          <HelpTOCNode Title="Logger Method " Url="html/M_LaunchDarkly_Logging_ILogAdapterExtensions_Logger.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="df464162-268b-4529-9ee0-4299cd6cdaee" Title="LogCapture Class" Url="html/T_LaunchDarkly_Logging_LogCapture.htm">
+        <HelpTOCNode Title="LogCapture Constructor " Url="html/M_LaunchDarkly_Logging_LogCapture__ctor.htm" />
+        <HelpTOCNode Id="7c2e37ca-d859-4704-b118-3dd4d2b00738" Title="LogCapture Methods" Url="html/Methods_T_LaunchDarkly_Logging_LogCapture.htm">
+          <HelpTOCNode Title="GetMessages Method " Url="html/M_LaunchDarkly_Logging_LogCapture_GetMessages.htm" />
+          <HelpTOCNode Title="GetMessageStrings Method " Url="html/M_LaunchDarkly_Logging_LogCapture_GetMessageStrings.htm" />
+          <HelpTOCNode Title="HasMessageWithRegex Method " Url="html/M_LaunchDarkly_Logging_LogCapture_HasMessageWithRegex.htm" />
+          <HelpTOCNode Title="HasMessageWithText Method " Url="html/M_LaunchDarkly_Logging_LogCapture_HasMessageWithText.htm" />
+          <HelpTOCNode Title="NewChannel Method " Url="html/M_LaunchDarkly_Logging_LogCapture_NewChannel.htm" />
+          <HelpTOCNode Title="ToString Method " Url="html/M_LaunchDarkly_Logging_LogCapture_ToString.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="4e29165d-fb89-40f1-84c2-f1c932390df6" Title="LogCapture.Message Structure" Url="html/T_LaunchDarkly_Logging_LogCapture_Message.htm">
+        <HelpTOCNode Title="LogCapture.Message Constructor " Url="html/M_LaunchDarkly_Logging_LogCapture_Message__ctor.htm" />
+        <HelpTOCNode Id="c4fdf70e-8f8f-4c80-9256-315f2982a9ac" Title="Message Properties" Url="html/Properties_T_LaunchDarkly_Logging_LogCapture_Message.htm">
+          <HelpTOCNode Title="Level Property " Url="html/P_LaunchDarkly_Logging_LogCapture_Message_Level.htm" />
+          <HelpTOCNode Title="LoggerName Property " Url="html/P_LaunchDarkly_Logging_LogCapture_Message_LoggerName.htm" />
+          <HelpTOCNode Title="Text Property " Url="html/P_LaunchDarkly_Logging_LogCapture_Message_Text.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="09f88e77-c234-4a6d-bce6-7d0f5d0f025e" Title="Message Methods" Url="html/Methods_T_LaunchDarkly_Logging_LogCapture_Message.htm">
+          <HelpTOCNode Title="ToString Method " Url="html/M_LaunchDarkly_Logging_LogCapture_Message_ToString.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="0be04cd7-699d-4b93-85e5-7868ba5d7186" Title="Logger Class" Url="html/T_LaunchDarkly_Logging_Logger.htm">
+        <HelpTOCNode Id="14b0dd79-a141-44a8-8d60-44ae18c29a4d" Title="Logger Methods" Url="html/Methods_T_LaunchDarkly_Logging_Logger.htm">
+          <HelpTOCNode Id="696abad2-a475-4935-bd63-736d702eeee5" Title="Debug Method " Url="html/Overload_LaunchDarkly_Logging_Logger_Debug.htm">
+            <HelpTOCNode Title="Debug Method (Object)" Url="html/M_LaunchDarkly_Logging_Logger_Debug.htm" />
+            <HelpTOCNode Title="Debug Method (String, Object)" Url="html/M_LaunchDarkly_Logging_Logger_Debug_1.htm" />
+            <HelpTOCNode Title="Debug Method (String, Object[])" Url="html/M_LaunchDarkly_Logging_Logger_Debug_3.htm" />
+            <HelpTOCNode Title="Debug Method (String, Object, Object)" Url="html/M_LaunchDarkly_Logging_Logger_Debug_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="M:LaunchDarkly.Logging.Logger.error(System.String,System.Object)" Url="" />
+          <HelpTOCNode Id="1a804168-e21f-430d-a48c-7dd211646007" Title="Error Method " Url="html/Overload_LaunchDarkly_Logging_Logger_Error.htm">
+            <HelpTOCNode Title="error Method " Url="html/M_LaunchDarkly_Logging_Logger_Error.htm" />
+            <HelpTOCNode Title="Error Method (String, Object[])" Url="html/M_LaunchDarkly_Logging_Logger_Error_2.htm" />
+            <HelpTOCNode Title="Error Method (String, Object, Object)" Url="html/M_LaunchDarkly_Logging_Logger_Error_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="5231a9c9-1b37-4dd1-a935-5db0c5af566b" Title="Info Method " Url="html/Overload_LaunchDarkly_Logging_Logger_Info.htm">
+            <HelpTOCNode Title="Info Method (Object)" Url="html/M_LaunchDarkly_Logging_Logger_Info.htm" />
+            <HelpTOCNode Title="Info Method (String, Object)" Url="html/M_LaunchDarkly_Logging_Logger_Info_1.htm" />
+            <HelpTOCNode Title="Info Method (String, Object[])" Url="html/M_LaunchDarkly_Logging_Logger_Info_3.htm" />
+            <HelpTOCNode Title="Info Method (String, Object, Object)" Url="html/M_LaunchDarkly_Logging_Logger_Info_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="IsEnabled Method " Url="html/M_LaunchDarkly_Logging_Logger_IsEnabled.htm" />
+          <HelpTOCNode Title="SubLogger Method " Url="html/M_LaunchDarkly_Logging_Logger_SubLogger.htm" />
+          <HelpTOCNode Id="737c1e65-cb24-4b4a-81b6-6588880ba4f2" Title="Warn Method " Url="html/Overload_LaunchDarkly_Logging_Logger_Warn.htm">
+            <HelpTOCNode Title="Warn Method (Object)" Url="html/M_LaunchDarkly_Logging_Logger_Warn.htm" />
+            <HelpTOCNode Title="Warn Method (String, Object)" Url="html/M_LaunchDarkly_Logging_Logger_Warn_1.htm" />
+            <HelpTOCNode Title="Warn Method (String, Object[])" Url="html/M_LaunchDarkly_Logging_Logger_Warn_3.htm" />
+            <HelpTOCNode Title="Warn Method (String, Object, Object)" Url="html/M_LaunchDarkly_Logging_Logger_Warn_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="WithAdapter Method " Url="html/M_LaunchDarkly_Logging_Logger_WithAdapter.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="LogLevel Enumeration" Url="html/T_LaunchDarkly_Logging_LogLevel.htm" />
+      <HelpTOCNode Id="808eb565-57fb-4eed-b8ae-2ad05cec601f" Title="Logs Class" Url="html/T_LaunchDarkly_Logging_Logs.htm">
+        <HelpTOCNode Id="b0b1f999-0351-4e31-97a6-e3a583242583" Title="Logs Properties" Url="html/Properties_T_LaunchDarkly_Logging_Logs.htm">
+          <HelpTOCNode Title="Default Property " Url="html/P_LaunchDarkly_Logging_Logs_Default.htm" />
+          <HelpTOCNode Title="None Property " Url="html/P_LaunchDarkly_Logging_Logs_None.htm" />
+          <HelpTOCNode Title="ToConsole Property " Url="html/P_LaunchDarkly_Logging_Logs_ToConsole.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="5c0729f2-d35c-4725-9479-c0c1b28e2f81" Title="Logs Methods" Url="html/Methods_T_LaunchDarkly_Logging_Logs.htm">
+          <HelpTOCNode Title="Capture Method " Url="html/M_LaunchDarkly_Logging_Logs_Capture.htm" />
+          <HelpTOCNode Title="CoreLogging Method " Url="html/M_LaunchDarkly_Logging_Logs_CoreLogging.htm" />
+          <HelpTOCNode Title="ToMethod Method " Url="html/M_LaunchDarkly_Logging_Logs_ToMethod.htm" />
+          <HelpTOCNode Title="ToMultiple Method " Url="html/M_LaunchDarkly_Logging_Logs_ToMultiple.htm" />
+          <HelpTOCNode Title="ToWriter Method " Url="html/M_LaunchDarkly_Logging_Logs_ToWriter.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="c42656df-19be-44c6-a33f-0e30167224e1" Title="LogValues Class" Url="html/T_LaunchDarkly_Logging_LogValues.htm">
+        <HelpTOCNode Id="87ffe484-ecd6-4070-bea2-edcdae39f991" Title="LogValues Methods" Url="html/Methods_T_LaunchDarkly_Logging_LogValues.htm">
+          <HelpTOCNode Title="Defer Method " Url="html/M_LaunchDarkly_Logging_LogValues_Defer.htm" />
+          <HelpTOCNode Title="ExceptionSummary Method " Url="html/M_LaunchDarkly_Logging_LogValues_ExceptionSummary.htm" />
+          <HelpTOCNode Title="ExceptionTrace Method " Url="html/M_LaunchDarkly_Logging_LogValues_ExceptionTrace.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="75c16729-4bd8-4a08-8d59-9f455c5c69d2" Title="SimpleLogging Class" Url="html/T_LaunchDarkly_Logging_SimpleLogging.htm">
+        <HelpTOCNode Id="2c54db40-c436-4fe7-888d-3a9ed3cb0b24" Title="SimpleLogging Methods" Url="html/Methods_T_LaunchDarkly_Logging_SimpleLogging.htm">
+          <HelpTOCNode Title="DateFormat Method " Url="html/M_LaunchDarkly_Logging_SimpleLogging_DateFormat.htm" />
+          <HelpTOCNode Title="NewChannel Method " Url="html/M_LaunchDarkly_Logging_SimpleLogging_NewChannel.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="bc34f0ba-f6a7-4308-acfe-607680d733e3" Title="SimpleLogging Fields" Url="html/Fields_T_LaunchDarkly_Logging_SimpleLogging.htm">
+          <HelpTOCNode Title="DefaultDateFormat Field" Url="html/F_LaunchDarkly_Logging_SimpleLogging_DefaultDateFormat.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
