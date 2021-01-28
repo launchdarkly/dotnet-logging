@@ -10,8 +10,9 @@ namespace LaunchDarkly.Logging
     /// </summary>
     /// <remarks>
     /// This is the configurable adapter that is returned by <see cref="Logs.ToConsole"/>,
-    /// <see cref="Logs.ToWriter(TextWriter)"/>, and . You can specify additional options
-    /// using the methods of this class, such as <see cref="DateFormat(string)"/>.
+    /// <see cref="Logs.ToWriter(TextWriter)"/>, and <see cref="Logs.ToMethod(Action{string})"/>.
+    /// You can specify additional options using the methods of this class, such as
+    /// <see cref="DateFormat(string)"/>.
     /// </remarks>
     public class SimpleLogging : ILogAdapter
     {
