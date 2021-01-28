@@ -64,7 +64,37 @@ namespace LaunchDarkly.Logging
         /// </remarks>
         /// <param name="stream">the destination for output</param>
         /// <returns>a configurable logging adapter</returns>
-        public static SimpleLogging ToWriter(TextWriter stream) => new SimpleLogging(stream);
+        public static SimpleLogging ToWriter(TextWriter stream) =>
+            new SimpleLogging(stream.WriteLine);
+
+        /// <summary>
+        /// A simple logging implementation that calls a method or lambda that you specify for
+        /// each line of output.
+        /// </summary>
+        /// <remarks>
+        /// <para>
+        /// Each line is preformatted to include the logger name, the log level, and a timestamp
+        /// (unless you disable timestamps with <see cref="SimpleLogging.DateFormat(string)"/>),
+        /// in the same format used by <see cref="ToConsole"/>.
+        /// </para>
+        /// <para>
+        /// By default, all logging is enabled including <c>Debug</c> level. To filter by level, use
+        /// <see cref="ILogAdapterExtensions.Level(ILogAdapter, LogLevel)"/>. You can also use
+        /// <see cref="SimpleLogging"/> methods for additional configuration.
+        /// </para>
+        /// </remarks>
+        /// <example>
+        ///     // A silly example that just writes lines to the console, but with a "HEY!" prefix.
+        ///     var logAdapter = Logs.ToMethod(line =>
+        ///         {
+        ///             Console.WriteLine("HEY! " + line);
+        ///         });
+        /// </example>
+        /// <param name="writeLineMethod">a method or lambda that takes a line of text as a
+        /// parameter</param>
+        /// <returns>a configurable logging adapter</returns>
+        public static SimpleLogging ToMethod(Action<string> writeLineMethod) =>
+            new SimpleLogging(writeLineMethod);
 
 #if NETCOREAPP
         /// <summary>

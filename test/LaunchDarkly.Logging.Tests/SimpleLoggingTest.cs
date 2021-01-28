@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Xunit;
 
@@ -8,13 +9,29 @@ namespace LaunchDarkly.Logging.Tests
     {
         [Theory]
         [MemberData(nameof(AllLevelsData))]
-        public void TestOutput(LogLevel outputLevel)
+        public void TestWriterOutput(LogLevel outputLevel)
         {
             var sw = new StringWriter();
             var logger = Logs.ToWriter(sw).DateFormat(null)
                 .Logger("logname");
             WriteTestMessages(logger, outputLevel);
             var resultLines = ParseOutputLines(sw.ToString());
+            VerifyLines(resultLines, outputLevel);
+        }
+
+        [Theory]
+        [MemberData(nameof(AllLevelsData))]
+        public void TestMethodOutput(LogLevel outputLevel)
+        {
+            var resultLines = new List<string>();
+            var logger = Logs.ToMethod(resultLines.Add).DateFormat(null)
+                .Logger("logname");
+            WriteTestMessages(logger, outputLevel);
+            VerifyLines(resultLines.ToArray(), outputLevel);
+        }
+
+        private void VerifyLines(string[] resultLines, LogLevel outputLevel)
+        {
             var prefix = "[logname] " + outputLevel.Uppercase() + ": ";
             var expectedLines = new string[]
             {

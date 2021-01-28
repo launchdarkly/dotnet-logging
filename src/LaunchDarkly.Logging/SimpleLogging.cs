@@ -5,29 +5,31 @@ using System.Text;
 namespace LaunchDarkly.Logging
 {
     /// <summary>
-    /// A basic logging implementation that sends output to any <see cref="TextWriter"/>.
+    /// A basic logging implementation that sends preformatted output one line at a time
+    /// to a <see cref="TextWriter"/>, or to any arbitrary output function.
     /// </summary>
     /// <remarks>
-    /// This is the configurable adapter that is returned by <see cref="Logs.ToConsole"/>
-    /// or <see cref="Logs.ToWriter(TextWriter)"/>. You can specify additional options
-    /// using the methods of this class, such as <see cref="DateFormat(string)"/>.
+    /// This is the configurable adapter that is returned by <see cref="Logs.ToConsole"/>,
+    /// <see cref="Logs.ToWriter(TextWriter)"/>, and <see cref="Logs.ToMethod(Action{string})"/>.
+    /// You can specify additional options using the methods of this class, such as
+    /// <see cref="DateFormat(string)"/>.
     /// </remarks>
     public class SimpleLogging : ILogAdapter
     {
-        private readonly TextWriter _stream;
+        private readonly Action<string> _writeLine;
         private readonly string _dateFormat;
 
         /// <summary>
         /// The default format for log timestamps.
         /// </summary>
-        public const string DefaultDateFormat = "yyyy-MM-dd HH:mm:ss.SSS zzz";
+        public const string DefaultDateFormat = "yyyy-MM-dd HH:mm:ss.fff zzz";
 
-        internal SimpleLogging(TextWriter stream) :
-            this(stream, DefaultDateFormat) { }
+        internal SimpleLogging(Action<string> writeLine) :
+            this(writeLine, DefaultDateFormat) { }
 
-        internal SimpleLogging(TextWriter stream, string dateFormat)
+        internal SimpleLogging(Action<string> writeLine, string dateFormat)
         {
-            _stream = stream;
+            _writeLine = writeLine;
             _dateFormat = dateFormat;
         }
 
@@ -40,24 +42,24 @@ namespace LaunchDarkly.Logging
         /// <param name="dateFormat">the date/time format, or null to omit the date and time</param>
         /// <returns>an adapter with the specified configuration</returns>
         public SimpleLogging DateFormat(string dateFormat) =>
-            new SimpleLogging(_stream, dateFormat);
+            new SimpleLogging(_writeLine, dateFormat);
 
         /// <summary>
         /// Called internally by the logging framework.
         /// </summary>
         /// <param name="name">the channel name</param>
         /// <returns>a new channel</returns>
-        public IChannel NewChannel(string name) => new ChannelImpl(_stream, name, _dateFormat);
+        public IChannel NewChannel(string name) => new ChannelImpl(_writeLine, name, _dateFormat);
 
         private class ChannelImpl : IChannel
         {
-            private readonly TextWriter _stream;
+            private readonly Action<string> _writeLine;
             private readonly string _name;
             private readonly string _dateFormat;
 
-            internal ChannelImpl(TextWriter stream, string name, string dateFormat)
+            internal ChannelImpl(Action<string> writeLine, string name, string dateFormat)
             {
-                _stream = stream;
+                _writeLine = writeLine;
                 _name = name;
                 _dateFormat = dateFormat;
             }
@@ -92,7 +94,7 @@ namespace LaunchDarkly.Logging
                     s.Append(DateTime.Now.ToString(_dateFormat)).Append(" ");
                 }
                 s.Append("[").Append(_name).Append("] ").Append(level.Uppercase()).Append(": ").Append(message);
-                _stream.WriteLine(s.ToString());
+                _writeLine(s.ToString());
             }
         }
     }
