@@ -63,8 +63,6 @@ a8a17f69f1bef56e253fc9166096c907514ab74b812d041faa04712e2bcb243d
 Public Key Token: d9182e4b0afd33e7
 ```
 
-Building the code locally in the default Debug configuration does not sign the assembly and does not require a key file.
-
 ## About LaunchDarkly
  
 * LaunchDarkly is a continuous delivery platform that provides feature flags as a service and allows developers to iterate quickly and safely. We allow you to easily flag your features and manage them from the LaunchDarkly dashboard.  With LaunchDarkly, you can:
