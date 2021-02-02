@@ -1,7 +1,8 @@
 # LaunchDarkly Logging API for .NET
 
-[![CircleCI](https://circleci.com/gh/launchdarkly/dotnet-logging/tree/master.svg?style=svg)](https://circleci.com/gh/launchdarkly/dotnet-logging/tree/master)
-[![Documentation](https://img.shields.io/static/v1?label=GitHub+Pages&message=reference&color=00add8)](https://launchdarkly.github.io/dotnet-logging)
+[![NuGet](https://img.shields.io/nuget/v/LaunchDarkly.Logging.svg?style=flat-square)](https://www.nuget.org/packages/LaunchDarkly.Logging/)
+[![CircleCI](https://circleci.com/gh/launchdarkly/dotnet-logging.svg?style=shield)](https://circleci.com/gh/launchdarkly/dotnet-logging)
+[![Documentation](https://img.shields.io/static/v1?label=GitHub+Pages&message=API+reference&color=00add8)](https://launchdarkly.github.io/dotnet-logging)
 
 This .NET package provides a basic logging abstraction that is used by other LaunchDarkly .NET packages, including the LaunchDarkly [.NET SDK](https://github.com/launchdarkly/dotnet-server-sdk) and [Xamarin SDK](https://github.com/launchdarkly/xamarin-client-sdk). It can be connected to other logging frameworks with a simple adapter interface.
 
