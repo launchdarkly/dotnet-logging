@@ -87,8 +87,8 @@
   </HelpKINode>
   <HelpKINode Title="Logger method" Url="html/M_LaunchDarkly_Logging_ILogAdapterExtensions_Logger.htm" />
   <HelpKINode Title="Logger.Debug method" Url="html/Overload_LaunchDarkly_Logging_Logger_Debug.htm" />
-  <HelpKINode Title="Logger.error method" Url="html/M_LaunchDarkly_Logging_Logger_Error.htm" />
   <HelpKINode Title="Logger.Error method" Url="html/Overload_LaunchDarkly_Logging_Logger_Error.htm" />
+  <HelpKINode Title="Logger.error method" Url="html/M_LaunchDarkly_Logging_Logger_Error.htm" />
   <HelpKINode Title="Logger.Info method" Url="html/Overload_LaunchDarkly_Logging_Logger_Info.htm" />
   <HelpKINode Title="Logger.IsEnabled method" Url="html/M_LaunchDarkly_Logging_Logger_IsEnabled.htm" />
   <HelpKINode Title="Logger.SubLogger method" Url="html/M_LaunchDarkly_Logging_Logger_SubLogger.htm" />
