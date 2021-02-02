@@ -50,7 +50,7 @@ See [Contributing](https://github.com/launchdarkly/dotnet-logging/blob/master/CO
 
 ## Signing
 
-The published version of this assembly is digitally signed with Authenticode, and also strong-named. The public key file is in this repo at `LaunchDarkly.Logging.pk` as well as here:
+The published version of this assembly is digitally signed with Authenticode and [strong-named](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/strong-named-assemblies). Building the code locally in the default Debug configuration does not use strong-naming and does not require a key file. The public key file is in this repository at `LaunchDarkly.Logging.pk` as well as here:
 
 ```
 Public Key:
@@ -63,7 +63,7 @@ a8a17f69f1bef56e253fc9166096c907514ab74b812d041faa04712e2bcb243d
 Public Key Token: d9182e4b0afd33e7
 ```
 
-Building the code locally in the default Debug configuration does not sign the assembly and does not require a key file. Note that the unit tests can only be run in the Debug configuration.
+Building the code locally in the default Debug configuration does not sign the assembly and does not require a key file.
 
 ## About LaunchDarkly
  
