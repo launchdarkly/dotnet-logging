@@ -16,7 +16,7 @@ namespace LaunchDarkly.Logging
     /// </summary>
     /// <remarks>
     /// <para>
-    /// <c>LaunchDarkly.Logging</c>provides a simple logging abstraction that is used by other
+    /// <c>LaunchDarkly.Logging</c> provides a simple logging abstraction that is used by other
     /// LaunchDarkly .NET packages, including the LaunchDarkly .NET SDK and Xamarin SDK. It includes
     /// built-in implementations for basic logging (see <see cref="LaunchDarkly.Logging.Logs"/>), and can
     /// also be connected to other logging frameworks with a simple adapter interface. It does not deal
@@ -48,6 +48,7 @@ namespace LaunchDarkly.Logging
     /// </para>
     /// </remarks>
     /// <example>
+    /// <code>
     ///     // In this configuration, logging goes to the standard output stream (Console.Out).
     ///     var config1 = Configuration.Builder("my-sdk-key")
     ///         .Logging(Components.Logging(Logs.ToStream(Console.Out)))
@@ -62,6 +63,7 @@ namespace LaunchDarkly.Logging
     ///     var config3 = Configuration.Builder("my-sdk-key")
     ///         .Logging(Components.Logging(Logs.None))
     ///         .Build();
+    /// </code>
     /// </example>
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     class NamespaceDoc

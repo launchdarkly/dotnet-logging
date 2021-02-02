@@ -5,8 +5,12 @@
     <DebugType>portable</DebugType>
     <AssemblyName>LaunchDarkly.Logging</AssemblyName>
     <OutputType>Library</OutputType>
+    <LangVersion>7.3</LangVersion>
     <PackageId>LaunchDarkly.Logging</PackageId>
     <Description>LaunchDarkly logging abstraction</Description>
+    <Company>LaunchDarkly</Company>
+    <Authors>LaunchDarkly</Authors>
+    <Owners>LaunchDarkly</Owners>
     <Copyright>Copyright 2020 LaunchDarkly</Copyright>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>

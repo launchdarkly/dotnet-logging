@@ -1,7 +1,8 @@
 # LaunchDarkly Logging API for .NET
 
-[![CircleCI](https://circleci.com/gh/launchdarkly/dotnet-logging/tree/master.svg?style=svg)](https://circleci.com/gh/launchdarkly/dotnet-logging/tree/master)
-[![Documentation](https://img.shields.io/static/v1?label=GitHub+Pages&message=reference&color=00add8)](https://launchdarkly.github.io/dotnet-logging)
+[![NuGet](https://img.shields.io/nuget/v/LaunchDarkly.Logging.svg?style=flat-square)](https://www.nuget.org/packages/LaunchDarkly.Logging/)
+[![CircleCI](https://circleci.com/gh/launchdarkly/dotnet-logging.svg?style=shield)](https://circleci.com/gh/launchdarkly/dotnet-logging)
+[![Documentation](https://img.shields.io/static/v1?label=GitHub+Pages&message=API+reference&color=00add8)](https://launchdarkly.github.io/dotnet-logging)
 
 This .NET package provides a basic logging abstraction that is used by other LaunchDarkly .NET packages, including the LaunchDarkly [.NET SDK](https://github.com/launchdarkly/dotnet-server-sdk) and [Xamarin SDK](https://github.com/launchdarkly/xamarin-client-sdk). It can be connected to other logging frameworks with a simple adapter interface.
 
@@ -49,7 +50,7 @@ See [Contributing](https://github.com/launchdarkly/dotnet-logging/blob/master/CO
 
 ## Signing
 
-The published version of this assembly is digitally signed with Authenticode, and also strong-named. The public key file is in this repo at `LaunchDarkly.Logging.pk` as well as here:
+The published version of this assembly is digitally signed with Authenticode and [strong-named](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/strong-named-assemblies). Building the code locally in the default Debug configuration does not use strong-naming and does not require a key file. The public key file is in this repository at `LaunchDarkly.Logging.pk` as well as here:
 
 ```
 Public Key:
@@ -61,8 +62,6 @@ a8a17f69f1bef56e253fc9166096c907514ab74b812d041faa04712e2bcb243d
 
 Public Key Token: d9182e4b0afd33e7
 ```
-
-Building the code locally in the default Debug configuration does not sign the assembly and does not require a key file. Note that the unit tests can only be run in the Debug configuration.
 
 ## About LaunchDarkly
  
