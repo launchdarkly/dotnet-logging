@@ -1,0 +1,693 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: LaunchDarkly.Logging
+  name: LaunchDarkly.Logging
+  href: api/LaunchDarkly.Logging.html
+  commentId: N:LaunchDarkly.Logging
+  fullName: LaunchDarkly.Logging
+  nameWithType: LaunchDarkly.Logging
+- uid: LaunchDarkly.Logging.Extensions
+  name: Extensions
+  href: api/LaunchDarkly.Logging.Extensions.html
+  commentId: T:LaunchDarkly.Logging.Extensions
+  fullName: LaunchDarkly.Logging.Extensions
+  nameWithType: Extensions
+- uid: LaunchDarkly.Logging.Extensions.Uppercase(LaunchDarkly.Logging.LogLevel)
+  name: Uppercase(LogLevel)
+  href: api/LaunchDarkly.Logging.Extensions.html#LaunchDarkly_Logging_Extensions_Uppercase_LaunchDarkly_Logging_LogLevel_
+  commentId: M:LaunchDarkly.Logging.Extensions.Uppercase(LaunchDarkly.Logging.LogLevel)
+  fullName: LaunchDarkly.Logging.Extensions.Uppercase(LaunchDarkly.Logging.LogLevel)
+  nameWithType: Extensions.Uppercase(LogLevel)
+- uid: LaunchDarkly.Logging.Extensions.Uppercase*
+  name: Uppercase
+  href: api/LaunchDarkly.Logging.Extensions.html#LaunchDarkly_Logging_Extensions_Uppercase_
+  commentId: Overload:LaunchDarkly.Logging.Extensions.Uppercase
+  fullName: LaunchDarkly.Logging.Extensions.Uppercase
+  nameWithType: Extensions.Uppercase
+- uid: LaunchDarkly.Logging.IChannel
+  name: IChannel
+  href: api/LaunchDarkly.Logging.IChannel.html
+  commentId: T:LaunchDarkly.Logging.IChannel
+  fullName: LaunchDarkly.Logging.IChannel
+  nameWithType: IChannel
+- uid: LaunchDarkly.Logging.IChannel.IsEnabled(LaunchDarkly.Logging.LogLevel)
+  name: IsEnabled(LogLevel)
+  href: api/LaunchDarkly.Logging.IChannel.html#LaunchDarkly_Logging_IChannel_IsEnabled_LaunchDarkly_Logging_LogLevel_
+  commentId: M:LaunchDarkly.Logging.IChannel.IsEnabled(LaunchDarkly.Logging.LogLevel)
+  fullName: LaunchDarkly.Logging.IChannel.IsEnabled(LaunchDarkly.Logging.LogLevel)
+  nameWithType: IChannel.IsEnabled(LogLevel)
+- uid: LaunchDarkly.Logging.IChannel.IsEnabled*
+  name: IsEnabled
+  href: api/LaunchDarkly.Logging.IChannel.html#LaunchDarkly_Logging_IChannel_IsEnabled_
+  commentId: Overload:LaunchDarkly.Logging.IChannel.IsEnabled
+  fullName: LaunchDarkly.Logging.IChannel.IsEnabled
+  nameWithType: IChannel.IsEnabled
+- uid: LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel,System.Object)
+  name: Log(LogLevel, Object)
+  href: api/LaunchDarkly.Logging.IChannel.html#LaunchDarkly_Logging_IChannel_Log_LaunchDarkly_Logging_LogLevel_System_Object_
+  commentId: M:LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel,System.Object)
+  fullName: LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel, System.Object)
+  nameWithType: IChannel.Log(LogLevel, Object)
+- uid: LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel,System.String,System.Object)
+  name: Log(LogLevel, String, Object)
+  href: api/LaunchDarkly.Logging.IChannel.html#LaunchDarkly_Logging_IChannel_Log_LaunchDarkly_Logging_LogLevel_System_String_System_Object_
+  commentId: M:LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel,System.String,System.Object)
+  fullName: LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel, System.String, System.Object)
+  nameWithType: IChannel.Log(LogLevel, String, Object)
+- uid: LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel,System.String,System.Object,System.Object)
+  name: Log(LogLevel, String, Object, Object)
+  href: api/LaunchDarkly.Logging.IChannel.html#LaunchDarkly_Logging_IChannel_Log_LaunchDarkly_Logging_LogLevel_System_String_System_Object_System_Object_
+  commentId: M:LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel,System.String,System.Object,System.Object)
+  fullName: LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel, System.String, System.Object, System.Object)
+  nameWithType: IChannel.Log(LogLevel, String, Object, Object)
+- uid: LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel,System.String,System.Object[])
+  name: Log(LogLevel, String, Object[])
+  href: api/LaunchDarkly.Logging.IChannel.html#LaunchDarkly_Logging_IChannel_Log_LaunchDarkly_Logging_LogLevel_System_String_System_Object___
+  commentId: M:LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel,System.String,System.Object[])
+  name.vb: Log(LogLevel, String, Object())
+  fullName: LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel, System.String, System.Object[])
+  fullName.vb: LaunchDarkly.Logging.IChannel.Log(LaunchDarkly.Logging.LogLevel, System.String, System.Object())
+  nameWithType: IChannel.Log(LogLevel, String, Object[])
+  nameWithType.vb: IChannel.Log(LogLevel, String, Object())
+- uid: LaunchDarkly.Logging.IChannel.Log*
+  name: Log
+  href: api/LaunchDarkly.Logging.IChannel.html#LaunchDarkly_Logging_IChannel_Log_
+  commentId: Overload:LaunchDarkly.Logging.IChannel.Log
+  fullName: LaunchDarkly.Logging.IChannel.Log
+  nameWithType: IChannel.Log
+- uid: LaunchDarkly.Logging.ILogAdapter
+  name: ILogAdapter
+  href: api/LaunchDarkly.Logging.ILogAdapter.html
+  commentId: T:LaunchDarkly.Logging.ILogAdapter
+  fullName: LaunchDarkly.Logging.ILogAdapter
+  nameWithType: ILogAdapter
+- uid: LaunchDarkly.Logging.ILogAdapter.NewChannel(System.String)
+  name: NewChannel(String)
+  href: api/LaunchDarkly.Logging.ILogAdapter.html#LaunchDarkly_Logging_ILogAdapter_NewChannel_System_String_
+  commentId: M:LaunchDarkly.Logging.ILogAdapter.NewChannel(System.String)
+  fullName: LaunchDarkly.Logging.ILogAdapter.NewChannel(System.String)
+  nameWithType: ILogAdapter.NewChannel(String)
+- uid: LaunchDarkly.Logging.ILogAdapter.NewChannel*
+  name: NewChannel
+  href: api/LaunchDarkly.Logging.ILogAdapter.html#LaunchDarkly_Logging_ILogAdapter_NewChannel_
+  commentId: Overload:LaunchDarkly.Logging.ILogAdapter.NewChannel
+  fullName: LaunchDarkly.Logging.ILogAdapter.NewChannel
+  nameWithType: ILogAdapter.NewChannel
+- uid: LaunchDarkly.Logging.ILogAdapterExtensions
+  name: ILogAdapterExtensions
+  href: api/LaunchDarkly.Logging.ILogAdapterExtensions.html
+  commentId: T:LaunchDarkly.Logging.ILogAdapterExtensions
+  fullName: LaunchDarkly.Logging.ILogAdapterExtensions
+  nameWithType: ILogAdapterExtensions
+- uid: LaunchDarkly.Logging.ILogAdapterExtensions.Level(LaunchDarkly.Logging.ILogAdapter,LaunchDarkly.Logging.LogLevel)
+  name: Level(ILogAdapter, LogLevel)
+  href: api/LaunchDarkly.Logging.ILogAdapterExtensions.html#LaunchDarkly_Logging_ILogAdapterExtensions_Level_LaunchDarkly_Logging_ILogAdapter_LaunchDarkly_Logging_LogLevel_
+  commentId: M:LaunchDarkly.Logging.ILogAdapterExtensions.Level(LaunchDarkly.Logging.ILogAdapter,LaunchDarkly.Logging.LogLevel)
+  fullName: LaunchDarkly.Logging.ILogAdapterExtensions.Level(LaunchDarkly.Logging.ILogAdapter, LaunchDarkly.Logging.LogLevel)
+  nameWithType: ILogAdapterExtensions.Level(ILogAdapter, LogLevel)
+- uid: LaunchDarkly.Logging.ILogAdapterExtensions.Level*
+  name: Level
+  href: api/LaunchDarkly.Logging.ILogAdapterExtensions.html#LaunchDarkly_Logging_ILogAdapterExtensions_Level_
+  commentId: Overload:LaunchDarkly.Logging.ILogAdapterExtensions.Level
+  fullName: LaunchDarkly.Logging.ILogAdapterExtensions.Level
+  nameWithType: ILogAdapterExtensions.Level
+- uid: LaunchDarkly.Logging.ILogAdapterExtensions.Logger(LaunchDarkly.Logging.ILogAdapter,System.String)
+  name: Logger(ILogAdapter, String)
+  href: api/LaunchDarkly.Logging.ILogAdapterExtensions.html#LaunchDarkly_Logging_ILogAdapterExtensions_Logger_LaunchDarkly_Logging_ILogAdapter_System_String_
+  commentId: M:LaunchDarkly.Logging.ILogAdapterExtensions.Logger(LaunchDarkly.Logging.ILogAdapter,System.String)
+  fullName: LaunchDarkly.Logging.ILogAdapterExtensions.Logger(LaunchDarkly.Logging.ILogAdapter, System.String)
+  nameWithType: ILogAdapterExtensions.Logger(ILogAdapter, String)
+- uid: LaunchDarkly.Logging.ILogAdapterExtensions.Logger*
+  name: Logger
+  href: api/LaunchDarkly.Logging.ILogAdapterExtensions.html#LaunchDarkly_Logging_ILogAdapterExtensions_Logger_
+  commentId: Overload:LaunchDarkly.Logging.ILogAdapterExtensions.Logger
+  fullName: LaunchDarkly.Logging.ILogAdapterExtensions.Logger
+  nameWithType: ILogAdapterExtensions.Logger
+- uid: LaunchDarkly.Logging.LogCapture
+  name: LogCapture
+  href: api/LaunchDarkly.Logging.LogCapture.html
+  commentId: T:LaunchDarkly.Logging.LogCapture
+  fullName: LaunchDarkly.Logging.LogCapture
+  nameWithType: LogCapture
+- uid: LaunchDarkly.Logging.LogCapture.#ctor
+  name: LogCapture()
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture__ctor
+  commentId: M:LaunchDarkly.Logging.LogCapture.#ctor
+  fullName: LaunchDarkly.Logging.LogCapture.LogCapture()
+  nameWithType: LogCapture.LogCapture()
+- uid: LaunchDarkly.Logging.LogCapture.#ctor*
+  name: LogCapture
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture__ctor_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.#ctor
+  fullName: LaunchDarkly.Logging.LogCapture.LogCapture
+  nameWithType: LogCapture.LogCapture
+- uid: LaunchDarkly.Logging.LogCapture.GetMessages
+  name: GetMessages()
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_GetMessages
+  commentId: M:LaunchDarkly.Logging.LogCapture.GetMessages
+  fullName: LaunchDarkly.Logging.LogCapture.GetMessages()
+  nameWithType: LogCapture.GetMessages()
+- uid: LaunchDarkly.Logging.LogCapture.GetMessages*
+  name: GetMessages
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_GetMessages_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.GetMessages
+  fullName: LaunchDarkly.Logging.LogCapture.GetMessages
+  nameWithType: LogCapture.GetMessages
+- uid: LaunchDarkly.Logging.LogCapture.GetMessageStrings
+  name: GetMessageStrings()
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_GetMessageStrings
+  commentId: M:LaunchDarkly.Logging.LogCapture.GetMessageStrings
+  fullName: LaunchDarkly.Logging.LogCapture.GetMessageStrings()
+  nameWithType: LogCapture.GetMessageStrings()
+- uid: LaunchDarkly.Logging.LogCapture.GetMessageStrings*
+  name: GetMessageStrings
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_GetMessageStrings_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.GetMessageStrings
+  fullName: LaunchDarkly.Logging.LogCapture.GetMessageStrings
+  nameWithType: LogCapture.GetMessageStrings
+- uid: LaunchDarkly.Logging.LogCapture.HasMessageWithRegex(LaunchDarkly.Logging.LogLevel,System.String)
+  name: HasMessageWithRegex(LogLevel, String)
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_HasMessageWithRegex_LaunchDarkly_Logging_LogLevel_System_String_
+  commentId: M:LaunchDarkly.Logging.LogCapture.HasMessageWithRegex(LaunchDarkly.Logging.LogLevel,System.String)
+  fullName: LaunchDarkly.Logging.LogCapture.HasMessageWithRegex(LaunchDarkly.Logging.LogLevel, System.String)
+  nameWithType: LogCapture.HasMessageWithRegex(LogLevel, String)
+- uid: LaunchDarkly.Logging.LogCapture.HasMessageWithRegex*
+  name: HasMessageWithRegex
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_HasMessageWithRegex_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.HasMessageWithRegex
+  fullName: LaunchDarkly.Logging.LogCapture.HasMessageWithRegex
+  nameWithType: LogCapture.HasMessageWithRegex
+- uid: LaunchDarkly.Logging.LogCapture.HasMessageWithText(LaunchDarkly.Logging.LogLevel,System.String)
+  name: HasMessageWithText(LogLevel, String)
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_HasMessageWithText_LaunchDarkly_Logging_LogLevel_System_String_
+  commentId: M:LaunchDarkly.Logging.LogCapture.HasMessageWithText(LaunchDarkly.Logging.LogLevel,System.String)
+  fullName: LaunchDarkly.Logging.LogCapture.HasMessageWithText(LaunchDarkly.Logging.LogLevel, System.String)
+  nameWithType: LogCapture.HasMessageWithText(LogLevel, String)
+- uid: LaunchDarkly.Logging.LogCapture.HasMessageWithText*
+  name: HasMessageWithText
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_HasMessageWithText_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.HasMessageWithText
+  fullName: LaunchDarkly.Logging.LogCapture.HasMessageWithText
+  nameWithType: LogCapture.HasMessageWithText
+- uid: LaunchDarkly.Logging.LogCapture.Message
+  name: LogCapture.Message
+  href: api/LaunchDarkly.Logging.LogCapture.Message.html
+  commentId: T:LaunchDarkly.Logging.LogCapture.Message
+  fullName: LaunchDarkly.Logging.LogCapture.Message
+  nameWithType: LogCapture.Message
+- uid: LaunchDarkly.Logging.LogCapture.Message.#ctor(System.String,LaunchDarkly.Logging.LogLevel,System.String)
+  name: Message(String, LogLevel, String)
+  href: api/LaunchDarkly.Logging.LogCapture.Message.html#LaunchDarkly_Logging_LogCapture_Message__ctor_System_String_LaunchDarkly_Logging_LogLevel_System_String_
+  commentId: M:LaunchDarkly.Logging.LogCapture.Message.#ctor(System.String,LaunchDarkly.Logging.LogLevel,System.String)
+  fullName: LaunchDarkly.Logging.LogCapture.Message.Message(System.String, LaunchDarkly.Logging.LogLevel, System.String)
+  nameWithType: LogCapture.Message.Message(String, LogLevel, String)
+- uid: LaunchDarkly.Logging.LogCapture.Message.#ctor*
+  name: Message
+  href: api/LaunchDarkly.Logging.LogCapture.Message.html#LaunchDarkly_Logging_LogCapture_Message__ctor_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.Message.#ctor
+  fullName: LaunchDarkly.Logging.LogCapture.Message.Message
+  nameWithType: LogCapture.Message.Message
+- uid: LaunchDarkly.Logging.LogCapture.Message.Level
+  name: Level
+  href: api/LaunchDarkly.Logging.LogCapture.Message.html#LaunchDarkly_Logging_LogCapture_Message_Level
+  commentId: P:LaunchDarkly.Logging.LogCapture.Message.Level
+  fullName: LaunchDarkly.Logging.LogCapture.Message.Level
+  nameWithType: LogCapture.Message.Level
+- uid: LaunchDarkly.Logging.LogCapture.Message.Level*
+  name: Level
+  href: api/LaunchDarkly.Logging.LogCapture.Message.html#LaunchDarkly_Logging_LogCapture_Message_Level_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.Message.Level
+  fullName: LaunchDarkly.Logging.LogCapture.Message.Level
+  nameWithType: LogCapture.Message.Level
+- uid: LaunchDarkly.Logging.LogCapture.Message.LoggerName
+  name: LoggerName
+  href: api/LaunchDarkly.Logging.LogCapture.Message.html#LaunchDarkly_Logging_LogCapture_Message_LoggerName
+  commentId: P:LaunchDarkly.Logging.LogCapture.Message.LoggerName
+  fullName: LaunchDarkly.Logging.LogCapture.Message.LoggerName
+  nameWithType: LogCapture.Message.LoggerName
+- uid: LaunchDarkly.Logging.LogCapture.Message.LoggerName*
+  name: LoggerName
+  href: api/LaunchDarkly.Logging.LogCapture.Message.html#LaunchDarkly_Logging_LogCapture_Message_LoggerName_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.Message.LoggerName
+  fullName: LaunchDarkly.Logging.LogCapture.Message.LoggerName
+  nameWithType: LogCapture.Message.LoggerName
+- uid: LaunchDarkly.Logging.LogCapture.Message.Text
+  name: Text
+  href: api/LaunchDarkly.Logging.LogCapture.Message.html#LaunchDarkly_Logging_LogCapture_Message_Text
+  commentId: P:LaunchDarkly.Logging.LogCapture.Message.Text
+  fullName: LaunchDarkly.Logging.LogCapture.Message.Text
+  nameWithType: LogCapture.Message.Text
+- uid: LaunchDarkly.Logging.LogCapture.Message.Text*
+  name: Text
+  href: api/LaunchDarkly.Logging.LogCapture.Message.html#LaunchDarkly_Logging_LogCapture_Message_Text_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.Message.Text
+  fullName: LaunchDarkly.Logging.LogCapture.Message.Text
+  nameWithType: LogCapture.Message.Text
+- uid: LaunchDarkly.Logging.LogCapture.Message.ToString
+  name: ToString()
+  href: api/LaunchDarkly.Logging.LogCapture.Message.html#LaunchDarkly_Logging_LogCapture_Message_ToString
+  commentId: M:LaunchDarkly.Logging.LogCapture.Message.ToString
+  fullName: LaunchDarkly.Logging.LogCapture.Message.ToString()
+  nameWithType: LogCapture.Message.ToString()
+- uid: LaunchDarkly.Logging.LogCapture.Message.ToString*
+  name: ToString
+  href: api/LaunchDarkly.Logging.LogCapture.Message.html#LaunchDarkly_Logging_LogCapture_Message_ToString_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.Message.ToString
+  fullName: LaunchDarkly.Logging.LogCapture.Message.ToString
+  nameWithType: LogCapture.Message.ToString
+- uid: LaunchDarkly.Logging.LogCapture.NewChannel(System.String)
+  name: NewChannel(String)
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_NewChannel_System_String_
+  commentId: M:LaunchDarkly.Logging.LogCapture.NewChannel(System.String)
+  fullName: LaunchDarkly.Logging.LogCapture.NewChannel(System.String)
+  nameWithType: LogCapture.NewChannel(String)
+- uid: LaunchDarkly.Logging.LogCapture.NewChannel*
+  name: NewChannel
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_NewChannel_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.NewChannel
+  fullName: LaunchDarkly.Logging.LogCapture.NewChannel
+  nameWithType: LogCapture.NewChannel
+- uid: LaunchDarkly.Logging.LogCapture.ToString
+  name: ToString()
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_ToString
+  commentId: M:LaunchDarkly.Logging.LogCapture.ToString
+  fullName: LaunchDarkly.Logging.LogCapture.ToString()
+  nameWithType: LogCapture.ToString()
+- uid: LaunchDarkly.Logging.LogCapture.ToString*
+  name: ToString
+  href: api/LaunchDarkly.Logging.LogCapture.html#LaunchDarkly_Logging_LogCapture_ToString_
+  commentId: Overload:LaunchDarkly.Logging.LogCapture.ToString
+  fullName: LaunchDarkly.Logging.LogCapture.ToString
+  nameWithType: LogCapture.ToString
+- uid: LaunchDarkly.Logging.Logger
+  name: Logger
+  href: api/LaunchDarkly.Logging.Logger.html
+  commentId: T:LaunchDarkly.Logging.Logger
+  fullName: LaunchDarkly.Logging.Logger
+  nameWithType: Logger
+- uid: LaunchDarkly.Logging.Logger.Debug(System.Object)
+  name: Debug(Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Debug_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.Debug(System.Object)
+  fullName: LaunchDarkly.Logging.Logger.Debug(System.Object)
+  nameWithType: Logger.Debug(Object)
+- uid: LaunchDarkly.Logging.Logger.Debug(System.String,System.Object)
+  name: Debug(String, Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Debug_System_String_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.Debug(System.String,System.Object)
+  fullName: LaunchDarkly.Logging.Logger.Debug(System.String, System.Object)
+  nameWithType: Logger.Debug(String, Object)
+- uid: LaunchDarkly.Logging.Logger.Debug(System.String,System.Object,System.Object)
+  name: Debug(String, Object, Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Debug_System_String_System_Object_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.Debug(System.String,System.Object,System.Object)
+  fullName: LaunchDarkly.Logging.Logger.Debug(System.String, System.Object, System.Object)
+  nameWithType: Logger.Debug(String, Object, Object)
+- uid: LaunchDarkly.Logging.Logger.Debug(System.String,System.Object[])
+  name: Debug(String, Object[])
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Debug_System_String_System_Object___
+  commentId: M:LaunchDarkly.Logging.Logger.Debug(System.String,System.Object[])
+  name.vb: Debug(String, Object())
+  fullName: LaunchDarkly.Logging.Logger.Debug(System.String, System.Object[])
+  fullName.vb: LaunchDarkly.Logging.Logger.Debug(System.String, System.Object())
+  nameWithType: Logger.Debug(String, Object[])
+  nameWithType.vb: Logger.Debug(String, Object())
+- uid: LaunchDarkly.Logging.Logger.Debug*
+  name: Debug
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Debug_
+  commentId: Overload:LaunchDarkly.Logging.Logger.Debug
+  fullName: LaunchDarkly.Logging.Logger.Debug
+  nameWithType: Logger.Debug
+- uid: LaunchDarkly.Logging.Logger.Error(System.Object)
+  name: Error(Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Error_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.Error(System.Object)
+  fullName: LaunchDarkly.Logging.Logger.Error(System.Object)
+  nameWithType: Logger.Error(Object)
+- uid: LaunchDarkly.Logging.Logger.error(System.String,System.Object)
+  name: error(String, Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_error_System_String_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.error(System.String,System.Object)
+  fullName: LaunchDarkly.Logging.Logger.error(System.String, System.Object)
+  nameWithType: Logger.error(String, Object)
+- uid: LaunchDarkly.Logging.Logger.Error(System.String,System.Object,System.Object)
+  name: Error(String, Object, Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Error_System_String_System_Object_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.Error(System.String,System.Object,System.Object)
+  fullName: LaunchDarkly.Logging.Logger.Error(System.String, System.Object, System.Object)
+  nameWithType: Logger.Error(String, Object, Object)
+- uid: LaunchDarkly.Logging.Logger.Error(System.String,System.Object[])
+  name: Error(String, Object[])
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Error_System_String_System_Object___
+  commentId: M:LaunchDarkly.Logging.Logger.Error(System.String,System.Object[])
+  name.vb: Error(String, Object())
+  fullName: LaunchDarkly.Logging.Logger.Error(System.String, System.Object[])
+  fullName.vb: LaunchDarkly.Logging.Logger.Error(System.String, System.Object())
+  nameWithType: Logger.Error(String, Object[])
+  nameWithType.vb: Logger.Error(String, Object())
+- uid: LaunchDarkly.Logging.Logger.error*
+  name: error
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_error_
+  commentId: Overload:LaunchDarkly.Logging.Logger.error
+  fullName: LaunchDarkly.Logging.Logger.error
+  nameWithType: Logger.error
+- uid: LaunchDarkly.Logging.Logger.Error*
+  name: Error
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Error_
+  commentId: Overload:LaunchDarkly.Logging.Logger.Error
+  fullName: LaunchDarkly.Logging.Logger.Error
+  nameWithType: Logger.Error
+- uid: LaunchDarkly.Logging.Logger.Info(System.Object)
+  name: Info(Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Info_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.Info(System.Object)
+  fullName: LaunchDarkly.Logging.Logger.Info(System.Object)
+  nameWithType: Logger.Info(Object)
+- uid: LaunchDarkly.Logging.Logger.Info(System.String,System.Object)
+  name: Info(String, Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Info_System_String_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.Info(System.String,System.Object)
+  fullName: LaunchDarkly.Logging.Logger.Info(System.String, System.Object)
+  nameWithType: Logger.Info(String, Object)
+- uid: LaunchDarkly.Logging.Logger.Info(System.String,System.Object,System.Object)
+  name: Info(String, Object, Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Info_System_String_System_Object_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.Info(System.String,System.Object,System.Object)
+  fullName: LaunchDarkly.Logging.Logger.Info(System.String, System.Object, System.Object)
+  nameWithType: Logger.Info(String, Object, Object)
+- uid: LaunchDarkly.Logging.Logger.Info(System.String,System.Object[])
+  name: Info(String, Object[])
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Info_System_String_System_Object___
+  commentId: M:LaunchDarkly.Logging.Logger.Info(System.String,System.Object[])
+  name.vb: Info(String, Object())
+  fullName: LaunchDarkly.Logging.Logger.Info(System.String, System.Object[])
+  fullName.vb: LaunchDarkly.Logging.Logger.Info(System.String, System.Object())
+  nameWithType: Logger.Info(String, Object[])
+  nameWithType.vb: Logger.Info(String, Object())
+- uid: LaunchDarkly.Logging.Logger.Info*
+  name: Info
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Info_
+  commentId: Overload:LaunchDarkly.Logging.Logger.Info
+  fullName: LaunchDarkly.Logging.Logger.Info
+  nameWithType: Logger.Info
+- uid: LaunchDarkly.Logging.Logger.IsEnabled(LaunchDarkly.Logging.LogLevel)
+  name: IsEnabled(LogLevel)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_IsEnabled_LaunchDarkly_Logging_LogLevel_
+  commentId: M:LaunchDarkly.Logging.Logger.IsEnabled(LaunchDarkly.Logging.LogLevel)
+  fullName: LaunchDarkly.Logging.Logger.IsEnabled(LaunchDarkly.Logging.LogLevel)
+  nameWithType: Logger.IsEnabled(LogLevel)
+- uid: LaunchDarkly.Logging.Logger.IsEnabled*
+  name: IsEnabled
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_IsEnabled_
+  commentId: Overload:LaunchDarkly.Logging.Logger.IsEnabled
+  fullName: LaunchDarkly.Logging.Logger.IsEnabled
+  nameWithType: Logger.IsEnabled
+- uid: LaunchDarkly.Logging.Logger.SubLogger(System.String)
+  name: SubLogger(String)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_SubLogger_System_String_
+  commentId: M:LaunchDarkly.Logging.Logger.SubLogger(System.String)
+  fullName: LaunchDarkly.Logging.Logger.SubLogger(System.String)
+  nameWithType: Logger.SubLogger(String)
+- uid: LaunchDarkly.Logging.Logger.SubLogger*
+  name: SubLogger
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_SubLogger_
+  commentId: Overload:LaunchDarkly.Logging.Logger.SubLogger
+  fullName: LaunchDarkly.Logging.Logger.SubLogger
+  nameWithType: Logger.SubLogger
+- uid: LaunchDarkly.Logging.Logger.Warn(System.Object)
+  name: Warn(Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Warn_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.Warn(System.Object)
+  fullName: LaunchDarkly.Logging.Logger.Warn(System.Object)
+  nameWithType: Logger.Warn(Object)
+- uid: LaunchDarkly.Logging.Logger.Warn(System.String,System.Object)
+  name: Warn(String, Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Warn_System_String_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.Warn(System.String,System.Object)
+  fullName: LaunchDarkly.Logging.Logger.Warn(System.String, System.Object)
+  nameWithType: Logger.Warn(String, Object)
+- uid: LaunchDarkly.Logging.Logger.Warn(System.String,System.Object,System.Object)
+  name: Warn(String, Object, Object)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Warn_System_String_System_Object_System_Object_
+  commentId: M:LaunchDarkly.Logging.Logger.Warn(System.String,System.Object,System.Object)
+  fullName: LaunchDarkly.Logging.Logger.Warn(System.String, System.Object, System.Object)
+  nameWithType: Logger.Warn(String, Object, Object)
+- uid: LaunchDarkly.Logging.Logger.Warn(System.String,System.Object[])
+  name: Warn(String, Object[])
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Warn_System_String_System_Object___
+  commentId: M:LaunchDarkly.Logging.Logger.Warn(System.String,System.Object[])
+  name.vb: Warn(String, Object())
+  fullName: LaunchDarkly.Logging.Logger.Warn(System.String, System.Object[])
+  fullName.vb: LaunchDarkly.Logging.Logger.Warn(System.String, System.Object())
+  nameWithType: Logger.Warn(String, Object[])
+  nameWithType.vb: Logger.Warn(String, Object())
+- uid: LaunchDarkly.Logging.Logger.Warn*
+  name: Warn
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_Warn_
+  commentId: Overload:LaunchDarkly.Logging.Logger.Warn
+  fullName: LaunchDarkly.Logging.Logger.Warn
+  nameWithType: Logger.Warn
+- uid: LaunchDarkly.Logging.Logger.WithAdapter(LaunchDarkly.Logging.ILogAdapter,System.String)
+  name: WithAdapter(ILogAdapter, String)
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_WithAdapter_LaunchDarkly_Logging_ILogAdapter_System_String_
+  commentId: M:LaunchDarkly.Logging.Logger.WithAdapter(LaunchDarkly.Logging.ILogAdapter,System.String)
+  fullName: LaunchDarkly.Logging.Logger.WithAdapter(LaunchDarkly.Logging.ILogAdapter, System.String)
+  nameWithType: Logger.WithAdapter(ILogAdapter, String)
+- uid: LaunchDarkly.Logging.Logger.WithAdapter*
+  name: WithAdapter
+  href: api/LaunchDarkly.Logging.Logger.html#LaunchDarkly_Logging_Logger_WithAdapter_
+  commentId: Overload:LaunchDarkly.Logging.Logger.WithAdapter
+  fullName: LaunchDarkly.Logging.Logger.WithAdapter
+  nameWithType: Logger.WithAdapter
+- uid: LaunchDarkly.Logging.LogLevel
+  name: LogLevel
+  href: api/LaunchDarkly.Logging.LogLevel.html
+  commentId: T:LaunchDarkly.Logging.LogLevel
+  fullName: LaunchDarkly.Logging.LogLevel
+  nameWithType: LogLevel
+- uid: LaunchDarkly.Logging.LogLevel.Debug
+  name: Debug
+  href: api/LaunchDarkly.Logging.LogLevel.html#LaunchDarkly_Logging_LogLevel_Debug
+  commentId: F:LaunchDarkly.Logging.LogLevel.Debug
+  fullName: LaunchDarkly.Logging.LogLevel.Debug
+  nameWithType: LogLevel.Debug
+- uid: LaunchDarkly.Logging.LogLevel.Error
+  name: Error
+  href: api/LaunchDarkly.Logging.LogLevel.html#LaunchDarkly_Logging_LogLevel_Error
+  commentId: F:LaunchDarkly.Logging.LogLevel.Error
+  fullName: LaunchDarkly.Logging.LogLevel.Error
+  nameWithType: LogLevel.Error
+- uid: LaunchDarkly.Logging.LogLevel.Info
+  name: Info
+  href: api/LaunchDarkly.Logging.LogLevel.html#LaunchDarkly_Logging_LogLevel_Info
+  commentId: F:LaunchDarkly.Logging.LogLevel.Info
+  fullName: LaunchDarkly.Logging.LogLevel.Info
+  nameWithType: LogLevel.Info
+- uid: LaunchDarkly.Logging.LogLevel.None
+  name: None
+  href: api/LaunchDarkly.Logging.LogLevel.html#LaunchDarkly_Logging_LogLevel_None
+  commentId: F:LaunchDarkly.Logging.LogLevel.None
+  fullName: LaunchDarkly.Logging.LogLevel.None
+  nameWithType: LogLevel.None
+- uid: LaunchDarkly.Logging.LogLevel.value__
+  name: value__
+  href: api/LaunchDarkly.Logging.LogLevel.html#LaunchDarkly_Logging_LogLevel_value__
+  commentId: F:LaunchDarkly.Logging.LogLevel.value__
+  fullName: LaunchDarkly.Logging.LogLevel.value__
+  nameWithType: LogLevel.value__
+- uid: LaunchDarkly.Logging.LogLevel.Warn
+  name: Warn
+  href: api/LaunchDarkly.Logging.LogLevel.html#LaunchDarkly_Logging_LogLevel_Warn
+  commentId: F:LaunchDarkly.Logging.LogLevel.Warn
+  fullName: LaunchDarkly.Logging.LogLevel.Warn
+  nameWithType: LogLevel.Warn
+- uid: LaunchDarkly.Logging.Logs
+  name: Logs
+  href: api/LaunchDarkly.Logging.Logs.html
+  commentId: T:LaunchDarkly.Logging.Logs
+  fullName: LaunchDarkly.Logging.Logs
+  nameWithType: Logs
+- uid: LaunchDarkly.Logging.Logs.Capture
+  name: Capture()
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_Capture
+  commentId: M:LaunchDarkly.Logging.Logs.Capture
+  fullName: LaunchDarkly.Logging.Logs.Capture()
+  nameWithType: Logs.Capture()
+- uid: LaunchDarkly.Logging.Logs.Capture*
+  name: Capture
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_Capture_
+  commentId: Overload:LaunchDarkly.Logging.Logs.Capture
+  fullName: LaunchDarkly.Logging.Logs.Capture
+  nameWithType: Logs.Capture
+- uid: LaunchDarkly.Logging.Logs.CoreLogging(Microsoft.Extensions.Logging.ILoggerFactory)
+  name: CoreLogging(ILoggerFactory)
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_CoreLogging_Microsoft_Extensions_Logging_ILoggerFactory_
+  commentId: M:LaunchDarkly.Logging.Logs.CoreLogging(Microsoft.Extensions.Logging.ILoggerFactory)
+  fullName: LaunchDarkly.Logging.Logs.CoreLogging(Microsoft.Extensions.Logging.ILoggerFactory)
+  nameWithType: Logs.CoreLogging(ILoggerFactory)
+- uid: LaunchDarkly.Logging.Logs.CoreLogging*
+  name: CoreLogging
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_CoreLogging_
+  commentId: Overload:LaunchDarkly.Logging.Logs.CoreLogging
+  fullName: LaunchDarkly.Logging.Logs.CoreLogging
+  nameWithType: Logs.CoreLogging
+- uid: LaunchDarkly.Logging.Logs.Default
+  name: Default
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_Default
+  commentId: P:LaunchDarkly.Logging.Logs.Default
+  fullName: LaunchDarkly.Logging.Logs.Default
+  nameWithType: Logs.Default
+- uid: LaunchDarkly.Logging.Logs.Default*
+  name: Default
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_Default_
+  commentId: Overload:LaunchDarkly.Logging.Logs.Default
+  fullName: LaunchDarkly.Logging.Logs.Default
+  nameWithType: Logs.Default
+- uid: LaunchDarkly.Logging.Logs.None
+  name: None
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_None
+  commentId: P:LaunchDarkly.Logging.Logs.None
+  fullName: LaunchDarkly.Logging.Logs.None
+  nameWithType: Logs.None
+- uid: LaunchDarkly.Logging.Logs.None*
+  name: None
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_None_
+  commentId: Overload:LaunchDarkly.Logging.Logs.None
+  fullName: LaunchDarkly.Logging.Logs.None
+  nameWithType: Logs.None
+- uid: LaunchDarkly.Logging.Logs.ToConsole
+  name: ToConsole
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_ToConsole
+  commentId: P:LaunchDarkly.Logging.Logs.ToConsole
+  fullName: LaunchDarkly.Logging.Logs.ToConsole
+  nameWithType: Logs.ToConsole
+- uid: LaunchDarkly.Logging.Logs.ToConsole*
+  name: ToConsole
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_ToConsole_
+  commentId: Overload:LaunchDarkly.Logging.Logs.ToConsole
+  fullName: LaunchDarkly.Logging.Logs.ToConsole
+  nameWithType: Logs.ToConsole
+- uid: LaunchDarkly.Logging.Logs.ToMethod(System.Action{System.String})
+  name: ToMethod(Action<String>)
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_ToMethod_System_Action_System_String__
+  commentId: M:LaunchDarkly.Logging.Logs.ToMethod(System.Action{System.String})
+  name.vb: ToMethod(Action(Of String))
+  fullName: LaunchDarkly.Logging.Logs.ToMethod(System.Action<System.String>)
+  fullName.vb: LaunchDarkly.Logging.Logs.ToMethod(System.Action(Of System.String))
+  nameWithType: Logs.ToMethod(Action<String>)
+  nameWithType.vb: Logs.ToMethod(Action(Of String))
+- uid: LaunchDarkly.Logging.Logs.ToMethod*
+  name: ToMethod
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_ToMethod_
+  commentId: Overload:LaunchDarkly.Logging.Logs.ToMethod
+  fullName: LaunchDarkly.Logging.Logs.ToMethod
+  nameWithType: Logs.ToMethod
+- uid: LaunchDarkly.Logging.Logs.ToMultiple(LaunchDarkly.Logging.ILogAdapter[])
+  name: ToMultiple(ILogAdapter[])
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_ToMultiple_LaunchDarkly_Logging_ILogAdapter___
+  commentId: M:LaunchDarkly.Logging.Logs.ToMultiple(LaunchDarkly.Logging.ILogAdapter[])
+  name.vb: ToMultiple(ILogAdapter())
+  fullName: LaunchDarkly.Logging.Logs.ToMultiple(LaunchDarkly.Logging.ILogAdapter[])
+  fullName.vb: LaunchDarkly.Logging.Logs.ToMultiple(LaunchDarkly.Logging.ILogAdapter())
+  nameWithType: Logs.ToMultiple(ILogAdapter[])
+  nameWithType.vb: Logs.ToMultiple(ILogAdapter())
+- uid: LaunchDarkly.Logging.Logs.ToMultiple*
+  name: ToMultiple
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_ToMultiple_
+  commentId: Overload:LaunchDarkly.Logging.Logs.ToMultiple
+  fullName: LaunchDarkly.Logging.Logs.ToMultiple
+  nameWithType: Logs.ToMultiple
+- uid: LaunchDarkly.Logging.Logs.ToWriter(System.IO.TextWriter)
+  name: ToWriter(TextWriter)
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_ToWriter_System_IO_TextWriter_
+  commentId: M:LaunchDarkly.Logging.Logs.ToWriter(System.IO.TextWriter)
+  fullName: LaunchDarkly.Logging.Logs.ToWriter(System.IO.TextWriter)
+  nameWithType: Logs.ToWriter(TextWriter)
+- uid: LaunchDarkly.Logging.Logs.ToWriter*
+  name: ToWriter
+  href: api/LaunchDarkly.Logging.Logs.html#LaunchDarkly_Logging_Logs_ToWriter_
+  commentId: Overload:LaunchDarkly.Logging.Logs.ToWriter
+  fullName: LaunchDarkly.Logging.Logs.ToWriter
+  nameWithType: Logs.ToWriter
+- uid: LaunchDarkly.Logging.LogValues
+  name: LogValues
+  href: api/LaunchDarkly.Logging.LogValues.html
+  commentId: T:LaunchDarkly.Logging.LogValues
+  fullName: LaunchDarkly.Logging.LogValues
+  nameWithType: LogValues
+- uid: LaunchDarkly.Logging.LogValues.Defer(System.Func{System.String})
+  name: Defer(Func<String>)
+  href: api/LaunchDarkly.Logging.LogValues.html#LaunchDarkly_Logging_LogValues_Defer_System_Func_System_String__
+  commentId: M:LaunchDarkly.Logging.LogValues.Defer(System.Func{System.String})
+  name.vb: Defer(Func(Of String))
+  fullName: LaunchDarkly.Logging.LogValues.Defer(System.Func<System.String>)
+  fullName.vb: LaunchDarkly.Logging.LogValues.Defer(System.Func(Of System.String))
+  nameWithType: LogValues.Defer(Func<String>)
+  nameWithType.vb: LogValues.Defer(Func(Of String))
+- uid: LaunchDarkly.Logging.LogValues.Defer*
+  name: Defer
+  href: api/LaunchDarkly.Logging.LogValues.html#LaunchDarkly_Logging_LogValues_Defer_
+  commentId: Overload:LaunchDarkly.Logging.LogValues.Defer
+  fullName: LaunchDarkly.Logging.LogValues.Defer
+  nameWithType: LogValues.Defer
+- uid: LaunchDarkly.Logging.LogValues.ExceptionSummary(System.Exception)
+  name: ExceptionSummary(Exception)
+  href: api/LaunchDarkly.Logging.LogValues.html#LaunchDarkly_Logging_LogValues_ExceptionSummary_System_Exception_
+  commentId: M:LaunchDarkly.Logging.LogValues.ExceptionSummary(System.Exception)
+  fullName: LaunchDarkly.Logging.LogValues.ExceptionSummary(System.Exception)
+  nameWithType: LogValues.ExceptionSummary(Exception)
+- uid: LaunchDarkly.Logging.LogValues.ExceptionSummary*
+  name: ExceptionSummary
+  href: api/LaunchDarkly.Logging.LogValues.html#LaunchDarkly_Logging_LogValues_ExceptionSummary_
+  commentId: Overload:LaunchDarkly.Logging.LogValues.ExceptionSummary
+  fullName: LaunchDarkly.Logging.LogValues.ExceptionSummary
+  nameWithType: LogValues.ExceptionSummary
+- uid: LaunchDarkly.Logging.LogValues.ExceptionTrace(System.Exception)
+  name: ExceptionTrace(Exception)
+  href: api/LaunchDarkly.Logging.LogValues.html#LaunchDarkly_Logging_LogValues_ExceptionTrace_System_Exception_
+  commentId: M:LaunchDarkly.Logging.LogValues.ExceptionTrace(System.Exception)
+  fullName: LaunchDarkly.Logging.LogValues.ExceptionTrace(System.Exception)
+  nameWithType: LogValues.ExceptionTrace(Exception)
+- uid: LaunchDarkly.Logging.LogValues.ExceptionTrace*
+  name: ExceptionTrace
+  href: api/LaunchDarkly.Logging.LogValues.html#LaunchDarkly_Logging_LogValues_ExceptionTrace_
+  commentId: Overload:LaunchDarkly.Logging.LogValues.ExceptionTrace
+  fullName: LaunchDarkly.Logging.LogValues.ExceptionTrace
+  nameWithType: LogValues.ExceptionTrace
+- uid: LaunchDarkly.Logging.SimpleLogging
+  name: SimpleLogging
+  href: api/LaunchDarkly.Logging.SimpleLogging.html
+  commentId: T:LaunchDarkly.Logging.SimpleLogging
+  fullName: LaunchDarkly.Logging.SimpleLogging
+  nameWithType: SimpleLogging
+- uid: LaunchDarkly.Logging.SimpleLogging.DateFormat(System.String)
+  name: DateFormat(String)
+  href: api/LaunchDarkly.Logging.SimpleLogging.html#LaunchDarkly_Logging_SimpleLogging_DateFormat_System_String_
+  commentId: M:LaunchDarkly.Logging.SimpleLogging.DateFormat(System.String)
+  fullName: LaunchDarkly.Logging.SimpleLogging.DateFormat(System.String)
+  nameWithType: SimpleLogging.DateFormat(String)
+- uid: LaunchDarkly.Logging.SimpleLogging.DateFormat*
+  name: DateFormat
+  href: api/LaunchDarkly.Logging.SimpleLogging.html#LaunchDarkly_Logging_SimpleLogging_DateFormat_
+  commentId: Overload:LaunchDarkly.Logging.SimpleLogging.DateFormat
+  fullName: LaunchDarkly.Logging.SimpleLogging.DateFormat
+  nameWithType: SimpleLogging.DateFormat
+- uid: LaunchDarkly.Logging.SimpleLogging.DefaultDateFormat
+  name: DefaultDateFormat
+  href: api/LaunchDarkly.Logging.SimpleLogging.html#LaunchDarkly_Logging_SimpleLogging_DefaultDateFormat
+  commentId: F:LaunchDarkly.Logging.SimpleLogging.DefaultDateFormat
+  fullName: LaunchDarkly.Logging.SimpleLogging.DefaultDateFormat
+  nameWithType: SimpleLogging.DefaultDateFormat
+- uid: LaunchDarkly.Logging.SimpleLogging.NewChannel(System.String)
+  name: NewChannel(String)
+  href: api/LaunchDarkly.Logging.SimpleLogging.html#LaunchDarkly_Logging_SimpleLogging_NewChannel_System_String_
+  commentId: M:LaunchDarkly.Logging.SimpleLogging.NewChannel(System.String)
+  fullName: LaunchDarkly.Logging.SimpleLogging.NewChannel(System.String)
+  nameWithType: SimpleLogging.NewChannel(String)
+- uid: LaunchDarkly.Logging.SimpleLogging.NewChannel*
+  name: NewChannel
+  href: api/LaunchDarkly.Logging.SimpleLogging.html#LaunchDarkly_Logging_SimpleLogging_NewChannel_
+  commentId: Overload:LaunchDarkly.Logging.SimpleLogging.NewChannel
+  fullName: LaunchDarkly.Logging.SimpleLogging.NewChannel
+  nameWithType: SimpleLogging.NewChannel

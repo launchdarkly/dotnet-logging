@@ -1,14 +1,119 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="refresh" content="1;url=html/R_Project_Documentation.htm">
-	<script type="text/javascript">
-		window.location.replace("html/R_Project_Documentation.htm")
-	</script>
-	<title>LaunchDarkly Logging Abstraction 1.0.1 - Redirect</title>
-</head>
-<body>
-	<p>If you are not redirected automatically, follow this link to the <a href="html/R_Project_Documentation.htm">default topic</a>.</p>
-</body>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>LaunchDarkly Logging API for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="LaunchDarkly Logging API for .NET ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="launchdarkly-logging-api-for-net">LaunchDarkly Logging API for .NET</h1>
+
+<p><strong>(version 1.0.1)</strong></p>
+<p>The <a href="https://nuget.org/packages/LaunchDarkly.Logging"><code>LaunchDarkly.Logging</code></a> package provides a simple logging abstraction that is used by other LaunchDarkly .NET packages, including the <a href="https://github.com/launchdarkly/dotnet-server-sdk">LaunchDarkly server-side .NET SDK</a> and <a href="https://github.com/launchdarkly/xamarin-client-sdk">Xamarin SDK</a>. It does not deal with administrative tasks such as rotating log files; the assumption is that those would be set up at an OS level or by an application framework.</p>
+<p>For a complete list of types and methods, see the <a class="xref" href="api/LaunchDarkly.Logging.html">API documentation</a>.</p>
+<p>There are built-in implementations for basic logging: see <a class="xref" href="api/LaunchDarkly.Logging.Logs.html">Logs</a>. The API can also be connected to other logging frameworks with a simple adapter interface, and LaunchDarkly provides several such adapters. For more information, see <a href="https://launchdarkly.github.io/dotnet-logging-adapters"><code>dotnet-logging-adapters</code></a>.</p>
+<p>For source code, see the <a href="https://github.com/launchdarkly/dotnet-logging">GitHub repository</a>.</p>
+<h2 id="rationale">Rationale</h2>
+<p>The reason for this indirect approach to logging is that LaunchDarkly tools can run on a variety of .NET platforms, including .NET Core, .NET Framework, .NET 5, and Xamarin. There is no single logging framework that is consistently favored across all of those. For instance, the standard in .NET Core is now <code>Microsoft.Extensions.Logging</code>, but in .NET Framework 4.5.x this is not available without bringing in .NET Core assemblies that are normally not used in .NET Framework.</p>
+<p>Earlier versions of LaunchDarkly SDKs used the <a href="https://github.com/net-commons/common-logging"><code>Common.Logging</code></a> framework, which provides adapters to various popular loggers. But writing the LaunchDarkly packages against such a third-party API causes inconvenience for any developer using LaunchDarkly who prefers a different framework, and it is a relatively heavyweight solution for projects that may have only simple logging requirements. This package, with its small feature set geared toward the needs of LaunchDarkly SDKs, aims to make the task of writing and maintaining logging adapters very straightforward, and to reduce the chance that a change in third-party APIs will cause backward incompatibillity.</p>
+<h2 id="examples">Examples</h2>
+<p>The example code below shows how to configure the LaunchDarkly server-side SDK for .NET to use some of the standard logging implementations. For more examples of how to specify a logging implementation when using the LaunchDarkly SDKs or other libraries, consult the documentation for those libraries. Each library may have its own rules for what the default logging implementation is if you don&#39;t specify one.</p>
+<p>In this configuration, logging goes to the standard output stream (Console.Out):</p>
+<pre><code class="lang-csharp">    var config = Configuration.Builder(&quot;my-sdk-key&quot;)
+        .Logging(Components.Logging(Logs.ToStream(Console.Out)))
+        .Build();
+</code></pre><p>This is the same, except all logging below Warn level is suppressed:</p>
+<pre><code class="lang-csharp">    var config = Configuration.Builder(&quot;my-sdk-key&quot;)
+        .Logging(Components.Logging(Logs.ToStream(Console.Out).Level(LogLevel.Warn)))
+        .Build();
+</code></pre><p>This configuration disables all logging (the SDK has a shortcut for doing the same thing, but the example shows how you can use <code>Logs.None</code> anywhere that a log adapter is expected):</p>
+<pre><code class="lang-csharp">    var config = Configuration.Builder(&quot;my-sdk-key&quot;)
+        .Logging(Components.Logging(Logs.None))
+        .Build();
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
 </html>
