@@ -15,7 +15,7 @@ We encourage pull requests and other contributions from the community. Before su
 ### Prerequisites
 
 To set up your SDK build time environment, you must [download .NET development tools and follow the instructions](https://dotnet.microsoft.com/download). .NET 5.0 is preferred, since the .NET 5.0 tools are able to build for all supported target platforms.
- 
+
 ### Building
  
 To install all required packages:
