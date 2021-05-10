@@ -16,5 +16,5 @@ template:
     - test
 
 documentation:
-  title: LaunchDarkly Logging Abstraction
+  title: LaunchDarkly Logging API for .NET
   githubPages: true

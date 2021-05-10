@@ -6,33 +6,7 @@
 
 This .NET package provides a basic logging abstraction that is used by other LaunchDarkly .NET packages, including the LaunchDarkly [.NET SDK](https://github.com/launchdarkly/dotnet-server-sdk) and [Xamarin SDK](https://github.com/launchdarkly/xamarin-client-sdk). It can be connected to other logging frameworks with a simple adapter interface.
 
-The reason for this indirect approach to logging is that LaunchDarkly tools can run on a variety of .NET platforms, including .NET Core, .NET Framework, and Xamarin. There is no single logging framework that is consistently favored across all of those. For instance, the standard in .NET Core is now `Microsoft.Extensions.Logging`, but in .NET Framework 4.5.x this is not available without bringing in .NET Core assemblies that are normally not used in .NET Framework.
-
-Earlier versions of LaunchDarkly SDKs used the [`Common.Logging`](https://github.com/net-commons/common-logging) framework, which provides adapters to various popular loggers. But writing the LaunchDarkly packages against such a third-party API causes inconvenience for any developer using LaunchDarkly who prefers a different framework, and it is a relatively heavyweight solution for projects that may only have simple logging requirements. This package, with its small feature set geared toward the needs of LaunchDarkly SDKs, aims to make the task of writing and maintaining logging adapters very straightforward, and to reduce the chance that a change in third-party APIs will cause backward incompatibillity.
-
-Here are simple examples of configuring the LaunchDarkly server-side SDK for .NET to use some of the standard logging implementations. For more examples of how to specify a logging implementation when using the LaunchDarkly SDKs or other libraries, consult the documentation for those libraries. Each library may have its own rules for what the default logging implementation is if you don't specify one.
-
-```csharp
-    // In this configuration, logging goes to the standard output stream (Console.Out).
-    var config1 = Configuration.Builder("my-sdk-key")
-        .Logging(Components.Logging(Logs.ToStream(Console.Out)))
-        .Build();
-
-    // Same, but all logging below Warn level is suppressed.
-    var config2 = Configuration.Builder("my-sdk-key")
-        .Logging(Components.Logging(Logs.ToStream(Console.Out).Level(LogLevel.Warn)))
-        .Build();
-
-    // This configuration delegates to the .NET Core logging framework, assuming that
-    // "loggerFactory" is a Microsoft.Extensions.Logging.ILoggerFactory.
-    var config3 = Configuration.Builder("my-sdk-key")
-    	.Logging(Components.Logging(Logs.CoreLogging(loggerFactory)));
-
-    // This configuration disables all logging.
-    var config4 = Configuration.Builder("my-sdk-key")
-        .Logging(Components.Logging(Logs.None))
-        .Build();
-```
+For more information and examples, see the [API documentation](https://launchdarkly.github.io/dotnet-logging).
 
 ## Supported .NET versions
 
@@ -76,4 +50,3 @@ Public Key Token: d9182e4b0afd33e7
     * [docs.launchdarkly.com](https://docs.launchdarkly.com/  "LaunchDarkly Documentation") for our documentation and SDK reference guides
     * [apidocs.launchdarkly.com](https://apidocs.launchdarkly.com/  "LaunchDarkly API Documentation") for our API documentation
     * [blog.launchdarkly.com](https://blog.launchdarkly.com/  "LaunchDarkly Blog Documentation") for the latest product updates
-    * [Feature Flagging Guide](https://github.com/launchdarkly/featureflags/  "Feature Flagging Guide") for best practices and strategies
