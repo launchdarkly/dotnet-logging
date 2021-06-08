@@ -2,7 +2,7 @@ The [`LaunchDarkly.Logging`](https://nuget.org/packages/LaunchDarkly.Logging) pa
 
 For a complete list of types and methods, see the [API documentation](xref:LaunchDarkly.Logging).
 
-There are built-in implementations for basic logging: see <xref:LaunchDarkly.Logging.Logs>. The API can also be connected to other logging frameworks with a simple adapter interface, and LaunchDarkly provides several such adapters. For more information, see [`dotnet-logging-adapters`](https://launchdarkly.github.io/dotnet-logging-adapters).
+There are built-in implementations for basic logging: see <xref:LaunchDarkly.Logging.Logs>. The API can also be connected to other logging frameworks with a simple adapter interface, and LaunchDarkly provides several such adapters; see "Adapters" below.
 
 For source code, see the [GitHub repository](https://github.com/launchdarkly/dotnet-logging).
 
@@ -39,3 +39,12 @@ This configuration disables all logging (the SDK has a shortcut for doing the sa
         .Logging(Components.Logging(Logs.None))
         .Build();
 ```
+
+## Adapters
+
+If you want to send logging to a destination that isn't built into this package, the `LaunchDarkly.Logging` API allows you to define your own adapter by implementing the `ILogAdapter` interface. We have already created implementations for use with several popular logging frameworks:
+
+* [Common.Logging](https://launchdarkly.github.io/dotnet-logging-adapters-commonlogging)
+* [Log4net](https://launchdarkly.github.io/dotnet-logging-adapters-log4net)
+* [Microsoft.Extensions.Logging](https://launchdarkly.github.io/dotnet-logging-adapters-ms)
+* [NLog](https://launchdarkly.github.io/dotnet-logging-adapters-nlog)
