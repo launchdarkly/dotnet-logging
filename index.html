@@ -65,7 +65,7 @@
 <p><strong>(version 1.0.1)</strong></p>
 <p>The <a href="https://nuget.org/packages/LaunchDarkly.Logging"><code>LaunchDarkly.Logging</code></a> package provides a simple logging abstraction that is used by other LaunchDarkly .NET packages, including the <a href="https://github.com/launchdarkly/dotnet-server-sdk">LaunchDarkly server-side .NET SDK</a> and <a href="https://github.com/launchdarkly/xamarin-client-sdk">Xamarin SDK</a>. It does not deal with administrative tasks such as rotating log files; the assumption is that those would be set up at an OS level or by an application framework.</p>
 <p>For a complete list of types and methods, see the <a class="xref" href="api/LaunchDarkly.Logging.html">API documentation</a>.</p>
-<p>There are built-in implementations for basic logging: see <a class="xref" href="api/LaunchDarkly.Logging.Logs.html">Logs</a>. The API can also be connected to other logging frameworks with a simple adapter interface, and LaunchDarkly provides several such adapters. For more information, see <a href="https://launchdarkly.github.io/dotnet-logging-adapters"><code>dotnet-logging-adapters</code></a>.</p>
+<p>There are built-in implementations for basic logging: see <a class="xref" href="api/LaunchDarkly.Logging.Logs.html">Logs</a>. The API can also be connected to other logging frameworks with a simple adapter interface, and LaunchDarkly provides several such adapters; see &quot;Adapters&quot; below.</p>
 <p>For source code, see the <a href="https://github.com/launchdarkly/dotnet-logging">GitHub repository</a>.</p>
 <h2 id="rationale">Rationale</h2>
 <p>The reason for this indirect approach to logging is that LaunchDarkly tools can run on a variety of .NET platforms, including .NET Core, .NET Framework, .NET 5, and Xamarin. There is no single logging framework that is consistently favored across all of those. For instance, the standard in .NET Core is now <code>Microsoft.Extensions.Logging</code>, but in .NET Framework 4.5.x this is not available without bringing in .NET Core assemblies that are normally not used in .NET Framework.</p>
@@ -84,7 +84,15 @@
 <pre><code class="lang-csharp">    var config = Configuration.Builder(&quot;my-sdk-key&quot;)
         .Logging(Components.Logging(Logs.None))
         .Build();
-</code></pre></article>
+</code></pre><h2 id="adapters">Adapters</h2>
+<p>If you want to send logging to a destination that isn&#39;t built into this package, the <code>LaunchDarkly.Logging</code> API allows you to define your own adapter by implementing the <code>ILogAdapter</code> interface. We have already created implementations for use with several popular logging frameworks:</p>
+<ul>
+<li><a href="https://launchdarkly.github.io/dotnet-logging-adapters-commonlogging">Common.Logging</a></li>
+<li><a href="https://launchdarkly.github.io/dotnet-logging-adapters-log4net">Log4net</a></li>
+<li><a href="https://launchdarkly.github.io/dotnet-logging-adapters-ms">Microsoft.Extensions.Logging</a></li>
+<li><a href="https://launchdarkly.github.io/dotnet-logging-adapters-nlog">NLog</a></li>
+</ul>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
