@@ -44,7 +44,7 @@ This configuration disables all logging (the SDK has a shortcut for doing the sa
 
 If you want to send logging to a destination that isn't built into this package, the `LaunchDarkly.Logging` API allows you to define your own adapter by implementing the `ILogAdapter` interface. We have already created implementations for use with several popular logging frameworks:
 
-* [Common.Logging](https://launchdarkly.github.io/dotnet-logging-adapters-commonlogging)
-* [Log4net](https://launchdarkly.github.io/dotnet-logging-adapters-log4net)
-* [Microsoft.Extensions.Logging](https://launchdarkly.github.io/dotnet-logging-adapters-ms)
-* [NLog](https://launchdarkly.github.io/dotnet-logging-adapters-nlog)
+* [Common.Logging](https://launchdarkly.github.io/dotnet-logging-adapter-commonlogging)
+* [Log4net](https://launchdarkly.github.io/dotnet-logging-adapter-log4net)
+* [Microsoft.Extensions.Logging](https://launchdarkly.github.io/dotnet-logging-adapter-ms)
+* [NLog](https://launchdarkly.github.io/dotnet-logging-adapter-nlog)
