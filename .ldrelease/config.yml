@@ -1,20 +1,17 @@
+version: 2
 
 publications:
   - url: https://nuget.org/packages/LaunchDarkly.Logging
     description: NuGet
 
-circleci:
-  windows:
-    context: org-global
-
-template:
-  name: dotnet-windows
-  env:
-    LD_RELEASE_TEST_TARGET_FRAMEWORK: net46
-    LD_RELEASE_DOCS_TARGET_FRAMEWORK: netcoreapp2.1 # so the docs will include Logs.CoreLogging
-  skip:
-    - test
+jobs:
+  - docker: {}
+    template:
+      name: dotnet-linux
+    env:
+      LD_RELEASE_TEST_TARGET_FRAMEWORK: net50
+      LD_RELEASE_DOCS_TARGET_FRAMEWORK: netcoreapp2.1 # so the docs will include Logs.CoreLogging
 
 documentation:
   title: LaunchDarkly Logging API for .NET
-  githubPages: true
+  gitHubPages: true
