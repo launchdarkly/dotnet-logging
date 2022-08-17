@@ -1,7 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Version>1.0.1</Version>
-    <TargetFrameworks>netstandard2.0;netcoreapp3.1;net462</TargetFrameworks>
+    <!--
+      The reason there's a mechanism here for overriding the target frameworks with
+      an environment variable is that we want to be able to run CI tests using .NET
+      SDKs that may not support all of these target frameworks.
+    -->
+    <BuildFrameworks Condition="'$(BUILDFRAMEWORKS)' == ''">netstandard2.0;netcoreapp3.1;net462</BuildFrameworks>
+    <TargetFrameworks>$(BUILDFRAMEWORKS)</TargetFrameworks>
     <DebugType>portable</DebugType>
     <AssemblyName>LaunchDarkly.Logging</AssemblyName>
     <OutputType>Library</OutputType>

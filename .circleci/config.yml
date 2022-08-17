@@ -9,19 +9,13 @@ workflows:
     jobs:
       - build_all
       - test_linux:
-          name: .NET Core 2.1
-          docker-image: mcr.microsoft.com/dotnet/core/sdk:2.1-focal
-          test-target-framework: netcoreapp2.1
-          requires:
-            - build_all
-      - test_linux:
-          name: .NET Core 2.1 library running in .NET Core 3.1
+          name: .NET Core 3.1
           docker-image: mcr.microsoft.com/dotnet/core/sdk:3.1-focal
           test-target-framework: netcoreapp3.1
           requires:
             - build_all
       - test_linux:
-          name: .NET Core 2.1 library running in .NET 6.0
+          name: .NET Core 3.1 library running in .NET 6.0
           docker-image: mcr.microsoft.com/dotnet/sdk:6.0-focal
           test-target-framework: net6.0
           requires:
@@ -75,6 +69,7 @@ jobs:
       name: win/vs2019
       shell: powershell.exe
     environment:
+      BUILDFRAMEWORKS: net462
       TESTFRAMEWORK: net462
     steps:
       - checkout
