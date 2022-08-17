@@ -67,6 +67,8 @@ jobs:
               -l "junit;LogFilePath=/tmp/circle-reports/unit-tests-commonsdk.xml" \
               -f <<parameters.test-target-framework>> \
               test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj
+      - store_test_results:
+          path: /tmp/circle-reports
 
   test_windows:
     executor:
@@ -96,3 +98,5 @@ jobs:
               dotnet test \
               -l "junit;LogFilePath=/tmp/circle-reports/unit-tests-commonsdk.xml" \
               test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj
+      - store_test_results:
+          path: /tmp/circle-reports
