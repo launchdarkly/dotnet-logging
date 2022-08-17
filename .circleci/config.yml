@@ -62,7 +62,11 @@ jobs:
           at: src/LaunchDarkly.Logging
       - run:
           name: run tests
-          command: dotnet test test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj -f <<parameters.test-target-framework>>
+          command: |
+              dotnet test \
+              -l "junit;LogFilePath=/tmp/circle-reports/unit-tests-commonsdk.xml" \
+              -f <<parameters.test-target-framework>> \
+              test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj
 
   test_windows:
     executor:
@@ -88,4 +92,7 @@ jobs:
           command: dotnet build src/LaunchDarkly.Logging -f net462
       - run:
           name: run tests
-          command: dotnet test test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj -f net462
+          command: |
+              dotnet test \
+              -l "junit;LogFilePath=/tmp/circle-reports/unit-tests-commonsdk.xml" \
+              test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj
