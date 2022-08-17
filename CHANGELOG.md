@@ -2,6 +2,10 @@
 
 All notable changes to the project will be documented in this file. For full release notes for the projects that depend on this project, see their respective changelogs. This file describes changes only to the common code. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [2.0.0] - 2022-08-17
+### Changed:
+- Removed EOL target frameworks .NET Core 2.1 and .NET Framework 4.5.2. Lowest compatible platform versions are now .NET Core 3.1, .NET Framework 4.6.2, .NET 6.0, and .NET Standard 2.0.
+
 ## [1.0.1] - 2021-02-02
 ### Added:
 - Source Link package is now published.
