@@ -1,37 +1,37 @@
 version: 2.1
 
+orbs:
+  win: circleci/windows@1.0.0
+
 workflows:
   version: 2
   test:
     jobs:
-      - build-netstandard-netcore
-      - test-netcore:
+      - build_all
+      - test_linux:
           name: .NET Core 2.1
           docker-image: mcr.microsoft.com/dotnet/core/sdk:2.1-focal
           test-target-framework: netcoreapp2.1
           requires:
-            - build-netstandard-netcore
-      - test-netcore:
+            - build_all
+      - test_linux:
           name: .NET Core 2.1 library running in .NET Core 3.1
           docker-image: mcr.microsoft.com/dotnet/core/sdk:3.1-focal
           test-target-framework: netcoreapp3.1
           requires:
-            - build-netstandard-netcore
-      - test-netcore:
-          name: .NET Core 2.1 library running in .NET 5.0
-          docker-image: mcr.microsoft.com/dotnet/sdk:5.0-focal
-          test-target-framework: net5.0
+            - build_all
+      - test_linux:
+          name: .NET Core 2.1 library running in .NET 6.0
+          docker-image: mcr.microsoft.com/dotnet/sdk:6.0-focal
+          test-target-framework: net6.0
           requires:
-            - build-netstandard-netcore
-      - test-windows-netframework-4-5-2
-
-orbs:
-  win: circleci/windows@1.0.0
+            - build_all
+      - test_windows
 
 jobs:
-  build-netstandard-netcore:
+  build_all:
     docker:
-      - image: mcr.microsoft.com/dotnet/core/sdk:2.1-focal
+      - image: mcr.microsoft.com/dotnet/core/sdk:3.1-focal
     environment:
       ASPNETCORE_SUPPRESSSTATUSMESSAGES: true
     steps:
@@ -43,15 +43,15 @@ jobs:
           name: build .NET Standard 2.0
           command: dotnet build src/LaunchDarkly.Logging -f netstandard2.0
       - run:
-          name: build .NET Core 2.1
-          command: dotnet build src/LaunchDarkly.Logging -f netcoreapp2.1
+          name: build .NET Core 3.1
+          command: dotnet build src/LaunchDarkly.Logging -f netcoreapp3.1
       - persist_to_workspace:
           root: src/LaunchDarkly.Logging
           paths:
             - bin
             - obj
 
-  test-netcore:
+  test_linux:
     parameters:
       docker-image:
         type: string
@@ -70,27 +70,27 @@ jobs:
           name: run tests
           command: dotnet test test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj -f <<parameters.test-target-framework>>
 
-  test-windows-netframework-4-5-2:
+  test_windows:
     executor:
       name: win/vs2019
       shell: powershell.exe
     environment:
-      TESTFRAMEWORK: net452
+      TESTFRAMEWORK: net462
     steps:
       - checkout
       - restore_cache:
           keys: 
-            - net452-deps-{{ checksum "src/LaunchDarkly.Logging/LaunchDarkly.Logging.csproj" }}-{{ checksum "test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj" }}
+            - net462-deps-{{ checksum "src/LaunchDarkly.Logging/LaunchDarkly.Logging.csproj" }}-{{ checksum "test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj" }}
       - run:
           name: install project dependencies
           command: dotnet restore
       - save_cache:
-          key: net452-deps-{{ checksum "src/LaunchDarkly.Logging/LaunchDarkly.Logging.csproj" }}-{{ checksum "test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj" }}
+          key: net462-deps-{{ checksum "src/LaunchDarkly.Logging/LaunchDarkly.Logging.csproj" }}-{{ checksum "test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj" }}
           paths:
             - C:\Users\circleci\.nuget\packages
       - run:
           name: build
-          command: dotnet build src/LaunchDarkly.Logging -f net452
+          command: dotnet build src/LaunchDarkly.Logging -f net462
       - run:
           name: run tests
-          command: dotnet test test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj -f net452
+          command: dotnet test test/LaunchDarkly.Logging.Tests/LaunchDarkly.Logging.Tests.csproj -f net462

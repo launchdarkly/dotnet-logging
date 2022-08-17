@@ -102,13 +102,21 @@ namespace LaunchDarkly.Logging
         /// </summary>
         /// <remarks>
         /// <para>
-        /// This method is only available when your target framework is .NET Core. It causes
+        /// This method is only available when your target framework is .NET Core or .NET 6.0+. It causes
         /// the <c>LaunchDarkly.Logging</c> APIs to delegate to the <c>Microsoft.Extensions.Logging</c>
         /// framework. The <c>ILoggingFactory</c> is the main configuration object for
         /// <c>Microsoft.Extensions.Logging</c>; application code can construct it programmatically,
         /// or can obtain it by dependency injection. For more information, see
         /// <see href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-3.1">Logging
         /// in .NET Core and ASP.NET Core</see>.
+        /// </para>
+        /// <para>
+        /// If you want to use <c>Microsoft.Extensions.Logging</c> on a different platform, such as
+        /// .NET Framework or a mobile OS, use the separate package
+        /// <a href="https://github.com/launchdarkly/dotnet-logging-adapter-ms">LaunchDarkly.Logging.Microsoft</a>.
+        /// The adapter is not built into <c>LaunchDarkly.Logging</c> on those platforms, to avoid
+        /// bringing in the <c>Microsoft.Extensions.Logging</c> package as a dependency that may not
+        /// be wanted.
         /// </para>
         /// <para>
         /// The .NET Core logging framework has its own mechanisms for filtering log output
