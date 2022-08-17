@@ -7,10 +7,14 @@ publications:
 jobs:
   - docker: {}
     template:
-      name: dotnet-linux
+      name: dotnet6-linux
     env:
-      LD_RELEASE_TEST_TARGET_FRAMEWORK: net50
-      LD_RELEASE_DOCS_TARGET_FRAMEWORK: netcoreapp2.1 # so the docs will include Logs.CoreLogging
+      LD_RELEASE_TEST_TARGET_FRAMEWORK: net6.0
+      LD_RELEASE_DOCS_TARGET_FRAMEWORK: netcoreapp3.1 # so the docs will include Logs.CoreLogging
+
+branches:
+  - name: main
+  - name: 1.x
 
 documentation:
   title: LaunchDarkly Logging API for .NET

@@ -12,8 +12,8 @@ For more information and examples, see the [API documentation](https://launchdar
 
 This version of the library is built for the following targets:
 
-* .NET Framework 4.5.2: runs on .NET Framework 4.5.x and above.
-* .NET Core 2.1: runs on .NET Core 2.x and 3.x, or .NET 5. This target provides an adapter to the standard .NET Core logging framework, `Logs.CoreLogging`, which is not available in .NET Framework.
+* .NET Framework 4.6.2: runs on .NET Framework 4.6.2 and above.
+* .NET Core 3.1: runs on .NET Core 3.x, or .NET 6.0+. This target provides an adapter to the standard .NET Core logging framework, `Logs.CoreLogging`, which is not available in .NET Framework except as a separate package.
 * .NET Standard 2.0: runs on application platforms that are neither of the above, such as Xamarin, or within a library that is targeted to .NET Standard 2.x.
 
 The .NET build tools should automatically load the most appropriate build of the library for whatever platform your application or library is targeted to.
