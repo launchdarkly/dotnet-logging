@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/circleci/AppData/Local/Temp/project-releaser-temp/build-docs",
+  "source_base_path": "/tmp/project-releaser/temp/build-docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/LaunchDarkly.Logging.Logs.html",
-          "hash": "lx2Xn6szFqoTdZIpDKfst+Raz0jqpkVuRgdksm2gQjk="
+          "hash": "8Auapl+k8RztVlA+ZIq8m7+qPZHMcI27KNukeQq65cY="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "YqhthpUx5rUKAQq/GpP0+4U2FcVTiH2go3hiQLTNJ/M="
+          "hash": "smTHXhcGnpZ4MLzUp/UAVOHKomN60xQsA+5CQ7DEfgg="
         }
       },
       "is_incremental": false,

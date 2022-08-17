@@ -255,13 +255,21 @@ By default, all logging is enabled including <code>Debug</code> level. To filter
   </table>
   <h5 id="LaunchDarkly_Logging_Logs_CoreLogging_Microsoft_Extensions_Logging_ILoggerFactory__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-This method is only available when your target framework is .NET Core. It causes
+This method is only available when your target framework is .NET Core or .NET 6.0+. It causes
 the <code>LaunchDarkly.Logging</code> APIs to delegate to the <code>Microsoft.Extensions.Logging</code>
 framework. The <code>ILoggingFactory</code> is the main configuration object for
 <code>Microsoft.Extensions.Logging</code>; application code can construct it programmatically,
 or can obtain it by dependency injection. For more information, see
 <a href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-3.1">Logging
 in .NET Core and ASP.NET Core</a>.
+</p>
+<p>
+If you want to use <code>Microsoft.Extensions.Logging</code> on a different platform, such as
+.NET Framework or a mobile OS, use the separate package
+<a href="https://github.com/launchdarkly/dotnet-logging-adapter-ms">LaunchDarkly.Logging.Microsoft</a>.
+The adapter is not built into <code>LaunchDarkly.Logging</code> on those platforms, to avoid
+bringing in the <code>Microsoft.Extensions.Logging</code> package as a dependency that may not
+be wanted.
 </p>
 <p>
 The .NET Core logging framework has its own mechanisms for filtering log output
