@@ -1,0 +1,20 @@
+name: CI
+description: Build and Test
+inputs:
+  sdk:
+    description: 'The dotnet SDK to use.'
+    required: false
+    default: '9'
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ inputs.sdk }}
+    - run: dotnet restore src/LaunchDarkly.Logging
+      shell: bash
+    - run: dotnet build src/LaunchDarkly.Logging
+      shell: bash
+    - run: dotnet test test/LaunchDarkly.Logging.Tests
+      shell: bash
