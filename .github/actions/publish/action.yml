@@ -20,8 +20,8 @@ runs:
     - name: Create Nuget Package
       shell: bash
       run: |
-        dotnet restore ./src/LaunchDarkly.Logging.CommonLogging/LaunchDarkly.Logging.CommonLogging.csproj
-        dotnet pack --no-build --output nupkgs --configuration Release ./src/LaunchDarkly.Logging.CommonLogging/LaunchDarkly.Logging.CommonLogging.csproj
+        dotnet restore ./src/LaunchDarkly.Logging/LaunchDarkly.Logging.csproj
+        dotnet pack --no-build --output nupkgs --configuration Release ./src/LaunchDarkly.Logging/LaunchDarkly.Logging.csproj
 
     - name: Publish Package
       if: ${{ inputs.dry_run == 'false' }}
