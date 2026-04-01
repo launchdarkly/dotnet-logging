@@ -33,4 +33,3 @@ jobs:
     uses: ./.github/workflows/publish.yml
     with:
       dry_run: false
-      tag: ${{ needs.release-please.outputs.tag_name }}
