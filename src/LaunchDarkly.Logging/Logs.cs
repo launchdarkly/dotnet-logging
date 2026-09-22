@@ -102,12 +102,12 @@ namespace LaunchDarkly.Logging
         /// </summary>
         /// <remarks>
         /// <para>
-        /// This method is only available when your target framework is .NET Core or .NET 6.0+. It causes
+        /// This method is only available when your target framework is .NET 8.0 or later. It causes
         /// the <c>LaunchDarkly.Logging</c> APIs to delegate to the <c>Microsoft.Extensions.Logging</c>
         /// framework. The <c>ILoggingFactory</c> is the main configuration object for
         /// <c>Microsoft.Extensions.Logging</c>; application code can construct it programmatically,
         /// or can obtain it by dependency injection. For more information, see
-        /// <see href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-3.1">Logging
+        /// <see href="https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-8.0">Logging
         /// in .NET Core and ASP.NET Core</see>.
         /// </para>
         /// <para>

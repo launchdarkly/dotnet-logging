@@ -44,8 +44,8 @@ To run all unit tests, for all targets:
 dotnet test test/LaunchDarkly.Logging.Tests
 ```
 
-Or, to run tests only for the .NET Standard 2.0 target (using the .NET Core 2.1 runtime):
+Or, to run tests for only one target framework:
 
 ```
-dotnet test test/LaunchDarkly.Logging.Tests -f netcoreapp2.1
+dotnet test test/LaunchDarkly.Logging.Tests -f net8.0
 ```
