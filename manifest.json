@@ -1,0 +1,250 @@
+{
+  "source_base_path": "/home/runner/work/dotnet-logging/dotnet-logging",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "CONTRIBUTING.md",
+      "output": {
+        ".html": {
+          "relative_path": "CONTRIBUTING.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "PROVENANCE.md",
+      "output": {
+        ".html": {
+          "relative_path": "PROVENANCE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging.Extensions",
+      "Summary": "<p sourcefile=\"api/LaunchDarkly.Logging.Extensions.yml\" sourcestartlinenumber=\"1\">Extension methods for convenience in implementing log adapters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.IChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.IChannel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging.IChannel",
+      "Summary": "<p sourcefile=\"api/LaunchDarkly.Logging.IChannel.yml\" sourcestartlinenumber=\"1\">The underlying implementation object used by some <xref href=\"LaunchDarkly.Logging.Logger\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.ILogAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.ILogAdapter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging.ILogAdapter",
+      "Summary": "<p sourcefile=\"api/LaunchDarkly.Logging.ILogAdapter.yml\" sourcestartlinenumber=\"1\">An abstraction of some mechanism for producing log output.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.ILogAdapterExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.ILogAdapterExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging.ILogAdapterExtensions",
+      "Summary": "<p sourcefile=\"api/LaunchDarkly.Logging.ILogAdapterExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods that can be applied to any <xref href=\"LaunchDarkly.Logging.ILogAdapter\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.LogCapture.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.LogCapture.Message.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging.LogCapture.Message",
+      "Summary": "<p sourcefile=\"api/LaunchDarkly.Logging.LogCapture.Message.yml\" sourcestartlinenumber=\"1\">Information about a captured log message.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.LogCapture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.LogCapture.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging.LogCapture",
+      "Summary": "<p sourcefile=\"api/LaunchDarkly.Logging.LogCapture.yml\" sourcestartlinenumber=\"1\">A mechanism for capturing logger output in memory.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.LogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.LogLevel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging.LogLevel",
+      "Summary": "<p sourcefile=\"api/LaunchDarkly.Logging.LogLevel.yml\" sourcestartlinenumber=\"1\">Enumeration of the logging levels defined by the LaunchDarkly.Logging abstraction.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.LogValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.LogValues.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging.LogValues",
+      "Summary": "<p sourcefile=\"api/LaunchDarkly.Logging.LogValues.yml\" sourcestartlinenumber=\"1\">Helper methods for logging special variables.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.Logger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging.Logger",
+      "Summary": "<p sourcefile=\"api/LaunchDarkly.Logging.Logger.yml\" sourcestartlinenumber=\"1\">A basic logger facade that delegates to an underlying output implementation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.Logs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.Logs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging.Logs",
+      "Summary": "<p sourcefile=\"api/LaunchDarkly.Logging.Logs.yml\" sourcestartlinenumber=\"1\">Factory methods for the basic logging implementations in this package.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.SimpleLogging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.SimpleLogging.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging.SimpleLogging",
+      "Summary": "<p sourcefile=\"api/LaunchDarkly.Logging.SimpleLogging.yml\" sourcestartlinenumber=\"1\">A basic logging implementation that sends preformatted output one line at a time\nto a <xref href=\"System.IO.TextWriter\" data-throw-if-not-resolved=\"false\"></xref>, or to any arbitrary output function.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LaunchDarkly.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LaunchDarkly.Logging.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LaunchDarkly.Logging",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
